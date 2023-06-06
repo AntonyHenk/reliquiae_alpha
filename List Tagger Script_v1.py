@@ -7,7 +7,7 @@ elif ask_head.lower() == "n":
     is_headed_list = False
 else:
     print("Bad input! Run me again.")
-incomplete_tagged_list_items = input("List items? Use syntax: 'De ligno,De sepulcro,De vestimento'").replace(",","</item><item>")
+incomplete_tagged_list_items = input("List items? Use syntax: 'De ligno,De sepulcro,De vestimento'").replace(",", "</item><item>")
 tagged_list_items = f"<item>{incomplete_tagged_list_items}</item>"
 simple_or_Inline = input("(S)imple list or (I)nline list?")
 if simple_or_Inline.lower() == "s":
