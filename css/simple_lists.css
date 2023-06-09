@@ -1,6 +1,10 @@
-TEI {
+@font-face {
     font-family: 'Junicode';
-    /* fix the font encoding AH  */
+    src:  url('fonts/junicode.woff?#iefix') format('woff');
+  }
+  
+  TEI {
+    font-family: 'Junicode','Times','Serif'; 
   }
   
   teiHeader {

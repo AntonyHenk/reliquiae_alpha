@@ -1,6 +1,10 @@
-TEI {
+@font-face {
     font-family: 'Junicode';
-    /* fix the font encoding AH  */
+    src:  url('fonts/junicode.woff?#iefix') format('woff');
+  }
+  
+  TEI {
+    font-family: 'Junicode','Times','Serif'; 
   }
   
   teiHeader {
@@ -28,8 +32,7 @@ TEI {
   revisionDesc:before {
     content: 'Revision History';
     }
-    
-  
+
     */
   
   editor:before {
@@ -84,7 +87,7 @@ TEI {
     font-style: italic;
   }
   
-  msDesc {              /* Hidden for now, since the information is also given in listWit>witness>name anyway*/
+  msDesc {        /* Hidden for now, since the information is also given in listWit>witness>name anyway*/
     display:none;
     }
   
