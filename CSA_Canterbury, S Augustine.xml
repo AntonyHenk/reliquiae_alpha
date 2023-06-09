@@ -50,7 +50,7 @@
     </encodingDesc>
     <revisionDesc> 
       <listChange>
-        <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName</change>
+        <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName, fixed header and linebreak issue</change>
         <change when="2023-05-06" who="AH">Initial draft. Ideally needs basis on a newer printing. Hacky line break left in for now.</change>
       </listChange>
     </revisionDesc>
@@ -109,8 +109,7 @@
               <item>De S. Benedicto.</item>
               <item>et alie plures reliquie sine scriptis</item>
               <item><span type="note">Et de S. Fide V.<note resp="AH">The line break below reflects MS layout. - AH</note></span></item><!--Sic?-->
-              </list><lb break="no"/> <!--This new list beginning is really to allow for display of the line break-->
-              <list rend="inline">
+              <lb break="no"/>
               <lb break="no"/> <!--James also makes an editorial comment about this line break but I see no reason to repeat it-->
               <item>Hollord.</item>
               <item>Ketil.</item>
