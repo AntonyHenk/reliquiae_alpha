@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI 
+[
+<!ENTITY % entities_list SYSTEM
+'https://langeslag.uni-goettingen.de/entities.txt'   >
+%entities_list;]
+>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="simplelists.css"?> <!--This is for turning on the css stylesheet. change the file as needed-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Relic list: Exeter, late 12th c. list on scroll [E3]</title><!-- Title of the work you are editing -->
+        <editor>Antony Henk</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Loca Sanctorum: English Medieval Relic Lists Online <date>2023</date>; not for distribution.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit><!-- Modify and expand as required -->
+          <witness xml:id="T1">
+            <abbr type="siglum">T1</abbr>
+            <name>Templatesby Cathedral Augustine MS 1066<!--locusinfo-->, f. 1r-1v<!--/locusinfo--></name><!--May be removed later-->
+            <locus from="1r" to="1v"/>
+            <desc>A list found in a 9th cent. Latin homiliary.</desc><!--Short desc. from Thomas catalogue-->
+            <msDesc><!--Normal MS desc-->
+              <msIdentifier>
+                <settlement>Templatesby</settlement>
+                <repository>Templatesby Cathedral</repository>
+                <collection>Augustine</collection><!--E.g., Cotton, Parker-->
+                <idno>1066</idno><!--Do NOT include 'MS'-->
+                <msName>Templatesby Cathedral Augustine MS 1066</msName><!--Use established name in Thomas for now-->
+              </msIdentifier>
+            </msDesc>
+          </witness>
+          <witness xml:id="T1_E"><!--Handle the problem of non-Thomian sigla later?-->
+            <abbr type="siglum">T1_E</abbr>
+            <name>Mustermann, M. 'Lists of saint's relics in the Templatesby Homiliary', Middling Ages 4, no. 20(2000): 69-70</name>
+            <locus from="69" to="70"/>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+    </encodingDesc>
+    <revisionDesc> 
+      <listChange>
+        <change when="2023-09-06" who="AH">Initial transcription draft.</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:lang="la"><!--Add language as 'la' or 'ang' depending. If there are language shifts, implement them as needed in body.-->
+      <div type="list">
+        <pb resp="#T1_E" n="60"/><!--Place pb's for both witness and MS as needed-->
+        <pb resp="#T1" n="1r"/><!--Leave an xml comment here if it's weird, like a scroll-->
+          <list rend="simple"><!--rend as 'simple' or 'inline' or other style as needed, for each list-->
+              <head><hi>Hec sunt nomina sanctarum reliquiarum que habentur in ecclesia sancte Marie et sancti Petri</hi></head>
+              <item>De ligno Domini</item>
+              <item>De vestimento Domini</item>
+              <item>De presepe Domini</item>
+              <item>De lancea et mucrone unde latus Domini apertum est</item>
+              <item>De mensa Christi in qua ipsemet cenabat</item>
+        <pb resp="#T1_E" n="70"/>
+              <item>De candela quam angelus Domini in sepulcro Christi irradiavit</item>
+            </list>
+              
+          <list rend="simple">
+              <head><hi>De Apostolis</hi></head><!--Use head and hi to mark a header that's visually different-->
+              <item>De barba sancti Petri apostoli et de capillis et de vestimento eiusdem</item>
+              <item>De colla sancti Pauli et de veste eiusdem</item>
+              <item><span type="note">De baculo sancti Andree apostoli<note resp="#T1_E" place="inline">(This item added in a later hand)</note></span></item>
+          </list>
+              
+          <list rend="inline">
+              <head><hi>De Martiribus</hi></head>
+            <item>De reliquiis sancti <span type="note">XL martyris<note resp="#T1_E" n="4" place="bottom">Forty Martyrs.</note></span></item>
+              <item>De sanguine sancti Stephani protomartyris et de reliquiis eiusdem et de capite eius</item>
+              <item>De ossibus sancti Laurentii martyris</item>
+              <item>De carbone et reliquiis eiusdem</item>
+              <item>Reliquie sancti Vincentii martyris</item>
+              <item>Reliquie sancti Vitalis martyris</item>
+              <item>Reliquie sancti Sebastiani martyris</item>
+              <item>Reliquie sanctorum Tiburcii et Valeriani martyrum</item>
+          </list>
+      </div>
+    </body>
+  </text>
+</TEI>
