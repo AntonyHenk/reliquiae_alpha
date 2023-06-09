@@ -132,4 +132,6 @@
     background-color: grey;
     padding: .5em .5em .5em .5em;
   }
-  
+  lb {
+    display:block;
+  }
