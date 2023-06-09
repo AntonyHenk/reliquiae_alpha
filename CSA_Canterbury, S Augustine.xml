@@ -60,8 +60,8 @@
       <div type="list">
         <pb resp="#CSA_J" n="55"/>
         <pb resp="#CSA" n="iv"/><!--verso of flyleaf-->
-          <head><hi>Héé sunt reliquie in uno paruo nigro scrinio flore uno signato.</hi></head><!-- Deal with e-caudatae; see needs to be moved into list -->
           <list rend="inline">
+            <head><hi>Héé sunt reliquie in uno paruo nigro scrinio flore uno signato.</hi></head>
               <item>De ligno domini plures particule.</item>
               <item>De sepulchro domini.</item>
               <item>De Scapula S. Nicomedis mart.</item>
