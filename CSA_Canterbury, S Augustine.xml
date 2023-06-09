@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI 
+[
+<!ENTITY % entities_list SYSTEM
+'https://langeslag.uni-goettingen.de/entities.txt'   >
+%entities_list;]
+>
+
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="inlinelists.css"?> <!--This is for turning on the css stylesheet. change the file as needed-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Relic list: Canterbury, probably 12th c. additions in gospel book [CSA]</title><!-- Title of the work you are editing -->
+        <editor>Antony Henk</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Loca Sanctorum: English Medieval Relic Lists Online <date>2023</date>; not for distribution.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit><!-- Modify and expand as required -->
+          <witness xml:id="CSA">
+            <abbr type="siglum">CSA</abbr>
+            <name>Corpus Christi College Cambridge MS 286<!--locusinfo-->, f. iv<!--/locusinfo--></name>
+            <locus from="iv" to="iv"/>
+            <desc>On a flyleaf of a gospel book.</desc>
+            <msDesc>
+              <msIdentifier>
+                <settlement>Cambridge</settlement>
+                <repository>Corpus Christi College</repository>
+                <!--collection></collection-->
+                <idno>286</idno>
+                <msName>Corpus Christi College Cambridge MS 286</msName>
+              </msIdentifier>
+            </msDesc>
+          </witness>
+          <witness xml:id="CSA_J">
+            <abbr type="siglum">CSA_J</abbr>
+            <name>James, M. R. Descriptive Catalogue of the Manuscripts in the Library of Corpus Christi College Cambridge, 2 vols. (Cambridge, 1912),
+             II<!--locusinfo-->, p. 55<!--/locusinfo--></name>
+            <locus from="55" to="55"/>
+            <!--what's the tagging  stuff for a book, so I can style this correctly? AH-->
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+    </encodingDesc>
+    <revisionDesc> 
+      <listChange>
+        <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName</change>
+        <change when="2023-05-06" who="AH">Initial draft. Ideally needs basis on a newer printing. Hacky line break left in for now.</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:lang="la">
+      <div type="list">
+        <pb resp="#CSA_J" n="55"/>
+        <pb resp="#CSA" n="iv"/><!--verso of flyleaf-->
+          <head><hi>Héé sunt reliquie in uno paruo nigro scrinio flore uno signato.</hi></head><!-- Deal with e-caudatae; see needs to be moved into list -->
+          <list rend="inline">
+              <item>De ligno domini plures particule.</item>
+              <item>De sepulchro domini.</item>
+              <item>De Scapula S. Nicomedis mart.</item>
+              <item>De Capillis S. Cecilie uirg. et m.</item>
+              <item>De S. Margareta.</item>
+              <item>De S. Ianuario.</item>
+              <item>De uest. S. Marie.</item>
+              <item>De ossibus et uest. S. Clementis m.</item>
+              <item>De uest. S. Cecilie.</item>
+              <item>De S. Antonio ep.</item>
+              <item>De S. Laurentio m.</item>
+              <item>De S. Joh. Bapt. os unum.</item>
+              <item>De S. Pancratio m.</item>
+              <item>Costa de S. Mathia Ap.</item>
+              <item><span type="note">De S. Wandregesilo.
+                <note resp="AH">After this point, James' editing of the MS repeatedly groups list items together in a way that the MS does not 
+                reflect or suggest, and he (misleadingly!) omits repeating list-item elements; his editing thus gives a false impression of 
+                irregularity or haphazardness in list style and structure. Therefore from this point I give the direct MS reading rather than
+                material given by James, though I silently maintain James' prior editorial conventions with respect to capitalisation, 
+                abbreviation, and expansion. - AH</note></span></item><!--revise this list based on a newer edition; change note?-->
+              <item>De S. Martino.</item>
+              <item>De S. Medardo atque Gildardo.</item><!--Note for James' lemma <!ENTITY mdash "&#x2014;">-->
+              <item>De S. Odulfo ep.</item>
+              <item>De S. Andoeno.</item>
+              <item>Dens S. Uedasti.</item>
+              <item>De S. Wlgaro.</item>
+              <item>De S. Paulino.</item>
+              <item>De S. Affre.</item>
+              <item>De S. Geruasio.</item>
+              <item>De S. Ambrosio.</item>
+              <item>De cruce S. Andree ap.</item>
+              <item>De S. Mildretha.</item> 
+              <item>De S. Wilfrido.</item>
+              <item>De S. Eadgitha.</item>
+              <item>De S. Folquino.</item>
+              <item>De S. Walburga.</item>
+              <item>De S. Amato Ep.</item>
+              <item>De S. Petrocio.</item>
+              <item>De S. Bartholomeo Ap.</item>
+              <item>De S. Tecla.</item>
+              <item>Digitus S. Gregorii.</item>
+              <item>De S. Jacobo Ap. fratre S. Johannis.</item>
+              <item>De S. Nicholao.</item>
+              <item>De S. Leonardo.</item>
+              <item>De S. Benedicto.</item>
+              <item>et alie plures reliquie sine scriptis</item>
+              <item><span type="note">Et de S. Fide V.<note resp="AH">The line break below reflects MS layout. - AH</note></span></item><!--Sic?-->
+              </list><lb break="no"/> <!--This new list beginning is really to allow for display of the line break-->
+              <list rend="inline">
+              <lb break="no"/> <!--James also makes an editorial comment about this line break but I see no reason to repeat it-->
+              <item>Hollord.</item>
+              <item>Ketil.</item>
+              <item>Ozor.</item>
+              <item>Yun.</item><!--Sic?-->
+              <item>Andreus.</item>
+              <item>Asclathe.</item>
+          </list>
+      </div>
+    </body>
+  </text>
+</TEI>

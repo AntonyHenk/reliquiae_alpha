@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI 
+[
+<!ENTITY % entities_list SYSTEM
+'https://langeslag.uni-goettingen.de/entities.txt'   >
+%entities_list;]
+>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="simplelists.css"?> <!--This is for turning on the css stylesheet. change the file as needed-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Relic list: Exeter, late 12th c. list on scroll [E3]</title><!-- Title of the work you are editing -->
+        <editor>Antony Henk</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Loca Sanctorum: English Medieval Relic Lists Online <date>2023</date>; not for distribution.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit><!-- Modify and expand as required -->
+          <witness xml:id="E3">
+            <abbr type="siglum">E3</abbr>
+            <name>Exeter Cathedral MS 2861<!--locusinfo-->, f. 1r-1v<!--/locusinfo--></name>
+            <locus from="1r" to="1v"/>
+            <desc>The list is on a scroll rather than in a codex; 1r and 1v refer to the respective sides of the scroll.</desc>
+            <msDesc>
+              <msIdentifier>
+                <settlement>Exeter</settlement>
+                <repository>Exeter Cathedral</repository>
+                <!--collection></collection-->
+                <idno>2861</idno>
+                <msName>Exeter Cathedral MS 2861</msName>
+              </msIdentifier>
+            </msDesc>
+          </witness>
+          <witness xml:id="E3_T">
+            <abbr type="siglum">E3_T</abbr>
+            <name>Thomas, I. G. 'The Cult of Saints' Relics in Medieval England', PhD Diss., University of London (1974)</name>
+            <locus from="478" to="485"/>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+    </encodingDesc>
+    <revisionDesc> 
+      <listChange>
+        <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName</change>
+        <change when="2023-06-06" who="AH">Moved initial head to inside of list</change>
+        <change when="2023-05-06" who="AH">removed redundant xml:langs and added a single xml:lang to body element</change>
+        <change when="2023-05-06" who="AH">added span type=note to allow for better CSS function</change>
+        <change when="2023-05-06" who="AH">changed to list-based markup, marked up Thomas' footnotes.</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:lang="la">
+      <div type="list">
+        <pb resp="#E3_T" n="478"/>
+        <pb resp="#E3" n="1r"/><!--Recto of scroll-->
+          <list rend="simple">
+              <head><hi>Hec sunt nomina sanctarum reliquiarum que habentur in ecclesia sancte Marie et sancti Petri Exoniensis, quarum 
+                maximam partem gloriosissimus rex Adelstanus, eiusdem ecclesie primus fundator, ibidem contulit </hi></head>
+              <item>De ligno Domini</item>
+              <item>De vestimento Domini</item>
+              <item>De presepe Domini</item>
+              <item>De lancea et mucrone unde latus Domini apertum est</item>
+              <item>De mensa Christi in qua ipsemet cenabat</item>
+        <pb resp="#E3_T" n="479"/>
+              <item>De candela quam angelus Domini in sepulcro Christi irradiavit</item>
+              <item>Item de presepi et sepulcro Domini</item>
+              <item>De rubo de quo locutus est Dominus Moysi</item>
+              <item>De loco ubi Dominus ascendit in celum</item>
+              <item>De altari quod ipse Dominus benedixit</item>
+              <item>De loco in quo Dominus fuit incarnatus</item>
+              </list>
+              
+              <list rend="simple">
+              <head><hi>De sancta Maria matre Domini</hi></head>
+              
+              <item>De vestimento sancte Marie matris Domini</item>
+              <item>De capillis eius, de velamine eiusdem et de sepulcro eius</item>
+              <item>De corpore sancti Iohannis Baptiste et de vestimento eiusdem</item>
+              <item>De reliquiis sanctorum Innocentium</item>
+          </list>
+              
+          <list rend="simple">
+              <head><hi>De Apostolis</hi></head>
+
+              <item>De barba sancti Petri apostoli et de capillis et de vestimento eiusdem</item>
+              <item>De colla sancti Pauli et de veste eiusdem</item>
+              <item>De baculo sancti Andree apostoli</item>
+              <item>De manna et de vestimento sancti Iohannis evangeliste</item>
+              <item>De capite sancti Bartholomei apostoli</item> 
+              <item>De reliquiis sancti Iacobi apostoli</item>
+              <item>De reliquiis sancti Mathie apostoli</item>
+          </list>
+              
+          <list rend="simple">
+              <head><hi>De Martiribus</hi></head>
+
+              <item>De sanguine sancti Stephani protomartyris et de reliquiis eiusdem et de capite eius et de lapíde eius</item>
+              <item>De ossibus sancti Laurentii martyris</item>
+              <item>De carbone et reliquiis eiusdem</item>
+        <pb resp="#E3_T" n="480"/>
+              <item>Reliquie sancti Vincentii martyris</item>
+              <item>Reliquie sancti Vitalis martyris</item>
+              <item>Reliquie sancti Sebastiani martyris</item>
+              <item>Reliquie sanctorum Tiburcii et Valeriani martyrum</item>
+              <item>Reliquie sancti Quirini martyris</item> 
+              <item>Item reliquie sancti Sebastiani martyris</item>
+              <item>Reliquie sanctorum Crisanti et Darie martyrum</item>
+              <item>Ossa sancti Urbani pape et martyris</item>
+              <item>Item reliquie sancti Vitalis martyris</item>
+              <item>Brachium sancti Candidi martyris</item>
+              <item>Brachium sancti Georgii martyris, de capite eiusdem</item>
+              <item>BReliquie sancti Apollinaris episcopi et martyris</item> 
+              <item>Reliquie sancti Quintini martyris</item>
+              <item>Reliquie sancti Cornelii martyris</item>
+              <item>Reliquie sancti Marcelli pape et martyris</item>
+              <item>Reliquie sancti Petri mrtyris</item>
+              <item>De capite sancti Ciriaci martyris</item>
+              <item>Dens sancti Mauricii, de reliquiis eiusdem</item>
+              <item>De reliquiis sancti Iuliani martyris</item>
+              <item>Reliquie sancti Lucani martyris, hoc est de corpore eius</item>
+              <item>Reliquie sancti Gervasii martyris</item>
+              <item>De capite sancti Christofori martyris</item>
+              <item>De corpore sancti Cononis martyris</item>
+              <item>Ossa sancti Anastasii martyris</item>
+              <item>Reliquie sancti Viti martyris</item>
+              <item>Reliquie sancti Nichasii martyris</item>
+              <item>Brachium sancti Iuvenalis martyris, de corpore eiusdem</item>
+              <item>Reliquie sancti Tiburcii martyris</item> 
+        <pb resp="#E3_T" n="481"/> 
+              <item>De sanguine sancti Viviani martyris</item>
+              <item>Reliquie sancti <span type="note">Eresii
+                <note resp="#E3_T" n="1" place="bottom">Euresius.</note></span>
+                martyris</item>
+              <item>Item reliquie sancti Ciriaci martyris</item>
+              <item>Ossa sancti Cesarii martyris et de veste eiusdem</item>
+              <item>Ossa sancti Benigni martyris</item>
+              <item>Reliquie sancti Iusti martyris</item>
+              <item>Reliquie sancti Laudi martyris</item>
+              <item>Reliquie sancti Eduardi martyris</item>
+              <item>Reliquie sancti Desiderii martyris</item>
+              <item>Reliquie sancti Pancratii martyris</item>
+              <item>Reliquie sancti Felicis pape et martyris</item>
+              <item>Religuie saneti Gordiani martyris</item> 
+              <item>Reliquie sancti <span type="note">Oflamni<note resp="#E3_T" n="2" place="bottom">Olympas.</note></span> consobrini sancti Petri apostoli</item>
+              <item>Reliquie sanctorum Crispini et Crispiniani martyrum</item> 
+              <item>Reliquie sanctorum <span type="note">martyrum qui in Ierusalem fuerunt martyrizati
+                <note resp="#E3_T" n="3" place="bottom">See <ref>Appendix II, Jerusalem.</ref></note></span></item> 
+              <item>De ossibus sancti Faustini martyris</item> 
+              <item>De reliquiis sancti <span type="note">XL martyris <note resp="#E3_T" place="inline">(sic)</note><note resp="#E3_T" n="4" place="bottom">Forty Martyrs.</note></span></item>
+              <item>De reliquiis sancti Magni episcopi et martyris</item> 
+              <item>De legione Thebeorum <span type="note">id <note resp="#E3_T" place="inline">(sic)</note></span> sancti Mauricii sociorumque eius</item> 
+              <item>De reliquiis sancti Blasii</item> 
+              <item>De capite et sanguine sancti Thome martyris, et pars magna cilicii ipsius et maxima pars eius camisie intincta sanguine eius</item> 
+          </list>
+
+        <pb resp="#E3_T" n="482"/>
+          <list rend="simple">
+              <head><hi>De Confessoribus</hi></head>
+              
+              <item>Reliquie sancti Martini episcopi et confessoris</item> 
+              <item>De capite sancti Nicholai episcopi et confessoris</item> 
+              <item>Reliquie sancti Gregorii pape et confessoris</item> 
+              <item>Reliquie sancti Augustini magni</item>
+              <item>De digito sancti Ieronimi presbyteri</item>  
+              <item>Reliquie sancti Germani Autisiodorensis episcopi</item>  
+              <item>De capite sancti Benedicti abbatis</item>  
+              <item>De dente et de virga sancti Basilii episcopi</item>  
+              <item>De corpore sancti <span type="note">Ewrtii<note resp="#E3_T" n="1" place="bottom">Evurtius.</note></span> episcopi</item>
+              <item>Reliquie sancti Medardi episcopi</item>  
+              <item>Reliquie sancti Audoeni episcopi</item>  
+              <item>Reliquie sancti Petri diaconi sancti Gregorii</item>  
+              <item>Reliquie sancti Maurilii episcopi</item>  
+              <item>Reliquie sancti <span type="note">Wlmari<note resp="#E3_T" n="2" place="bottom">Vulmar.</note></span> episcopi</item> 
+              <item>Reliquie sancti Wtuuali</item>  
+              <item>Reliquie sancti Crispini confessoris</item>  
+              <item>Reliquie sancti Silvestri pape et confessoris</item>  
+              <item>Reliquie sancti Galii episcopi</item>  
+              <item>Reliquie sancti Remigii episcopi episcopi, de cilicio eius et de planeca et tunica et crismali eius</item>
+              <item>Reliquie sancti <span type="note">Lupi<note resp="#E3_T" n="3" place="bottom">Loup.</note></span> episcopi</item>
+              
+        <pb resp="#E3_T" n="483"/>
+        <pb resp="#E3" n="1v"/><!--(Verso of Scroll)--> 
+              <item>De capillis sancti <span type="note">Iuti<note resp="#E3_T" n="1" place="bottom">Tudy.</note></span> confessoris</item> 
+              <item>Reliquie sancti Odonis episcopi</item>  
+              <item>Reliquie sancti Winwaloi confessoris</item>  
+              <item>Reliquie sancti <span type="note">Winnardi<note resp="#E3_T" n="2" place="bottom">Winard.</note></span> confessoris</item>  
+              <item>Brachium sancti Iuvenalis confessoris</item>  
+              <item>De brachio sancti <span type="note">Dioneti<note resp="#E3_T" n="3" place="bottom">Donatus.</note></span> episcopi</item>  
+              <item>De brachio sancti <span type="note">Ipotemii<note resp="#E3_T" n="4" place="bottom">Hippolitus.</note></span> confessoris</item>  
+              <item>De brachio et de capite sancti <span type="note">Conocani<note resp="#E3_T" n="5" place="bottom">Conan.</note></span> confessoris</item>  
+              <item>Reliquie sancti Designati confessoris</item>  
+              <item>De ossibus et de capillis et de vestimentis et una costa integra sancti Petroci</item>  
+              <item>Costa sancti Aviti episcopi</item>  
+              <item>Item reliquie sancti Remigii</item>  
+              <item>Reliquie sancti <span type="note">Luigerii<note resp="#E3_T" n="6" place="bottom">Liudgar.</note></span> episcopi</item>  
+              <item>De corpore sancti Aniani episcopi</item>  
+              <item>De corpore sancti Maximi episcopi</item>  
+              <item>Reliquie sancti <span type="note">Wernoci<note resp="#E3_T" n="7" place="bottom">Winnoc.</note></span> confessoris</item>  
+              <item>(Deleted) Brachium sancti <span type="note">Quonaquani<note resp="#E3_T" n="8" place="bottom">Conan (a repetition of earlier item).</note></span> episcopi</item>  
+              
+        <pb resp="#E3_T" n="484"/> 
+              <item>Ossa sancti <span type="note">Melani<note resp="#E3_T" n="1" place="bottom">Melaine.</note></span> episcopi</item> 
+              <item>De corpore sancti <span type="note">Withenoci<note resp="#E3_T" n="2" place="bottom">Wethnoc.</note></span> confessoris</item>  
+              <item>De corpore sancti <span type="note">Maioci<note resp="#E3_T" n="3" place="bottom">Feock.</note></span> confessoris</item>
+              <item>Reliquie sancti <span type="note">Tuduwali<note resp="#E3_T" n="4" place="bottom">Tudwal.</note></span> confessoris</item>  
+              <item>Reliquie sancti <span type="note">Valeriani<note resp="#E3_T" n="5" place="bottom">Valery.</note></span></item> 
+              <item>Item reliquie sancti Audoeni episcopi</item>  
+              <item>Reliquie sancti <span type="note">Ermelani<note resp="#E3_T" n="6" place="bottom">Hermanland.</note></span> confessoris</item> 
+              <item>De sancto <span type="note">Erchenwaldo<note resp="#E3_T" n="7" place="bottom">Erkenwald.</note></span></item> 
+              <item>De costa sancti Gregorii Spoletani episcopi</item>  
+              <item>De reliquiis sancti Rustici archiepiscopi et confessoris</item>  
+              <item>De reliquiis sancti Eucharii episcopi</item>  
+              <item>De reliquiis sancti Cerbonis episcopi et confessoris</item>  
+              <item>Item brachium sancti <span type="note">Pyrani<note resp="#E3_T" n="8" place="bottom">Piran.</note> confessoris <note resp="#E3_T" place="inline">(This item added in a later hand)</note></span></item>
+          </list> 
+          <list rend="simple">
+              <head><hi>De Virginibus</hi></head>  
+              
+              <item>De digito sancte Marie Magdalene</item>  
+              <item>De sancta Elisabetha</item>  
+              <item>Reliquie sancte Cecilie virginis et martyris</item>  
+              <item>Reliquie sancte Agathe virginis et martyris</item>  
+              <item>De velamine eiusdem et dentes eiusdem</item>  
+              
+        <pb resp="#E3_T" n="485"/>
+              <item>Reliquie sancte Agnetis virginis et martyris</item>
+              <item>Reliquie sancte Praxedis virginis et martyris</item>
+              <item>Reliquie sancte Eugenie et Felicule virginis</item> 
+              <item>Costa sancte Felicule virginis</item> 
+              <item>De capite sancte Margarete virginis et martyris</item> 
+              <item>Reliquie sancte Lucie virginis et martyris</item> 
+              <item>Item de sanctis Eugenia et Felicula virginibus</item> 
+              <item>Ossa sancte Mamille virginis</item> 
+              <item>Reliquie sancte Genovefe virginis</item> 
+              <item>Ossa sancte <span type="note">Babtildis<note resp="#E3_T" n="1" place="bottom">Bathildis.</note></span> regine</item>
+              <item>Reliquie sancte Leonille virginis</item> 
+              <item>Reliquie sancte <span type="note">Morenne<note resp="#E3_T" n="2" place="bottom">Morewenna.</note></span> virginis</item> 
+              <item>Reliquie sancte <span type="note">Sativole<note resp="#E3_T" n="3" place="bottom">Sidwell.</note></span> virginis et martyris</item> 
+              <item>Reliquie sancte <span type="note">Alvive<note resp="#E3_T" n="4" place="bottom">Ælfgyfa.</note></span> regine</item> 
+              <item>Reliquie sancte <span type="note">Sigeburge<note resp="#E3_T" n="5" place="bottom">Siburgis.</note></span> virginis</item>
+              <item>Maxilla sancte Brigide virginis</item> 
+              <item>De ossibus sancte <span type="note">Iustine
+                <note resp="#E3_T" n="6" place="bottom">Justina; the following phrase is an error. See <ref>ch. 2.</ref></note></span> 
+                  matris Felicis Treverensis episcopi</item> 
+              <item>De reliquiis sancte Felicitatis</item> 
+              <item>De reliquiis sanctarum Marie et Marthe et sancti Lazari fratris earum</item>
+              <item>De oleo sancte Katerine virginis et martyris</item> 
+              <item>Et multe alie innumerabiles quarum nomina scripta non invenimus</item> 
+          </list>
+      </div>
+    </body>
+  </text>
+</TEI>
