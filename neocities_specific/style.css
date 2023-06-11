@@ -1,0 +1,132 @@
+
+@font-face {
+  font-family: 'Junicode';
+  src:  url('fonts/junicode.woff?#iefix') format('woff');
+}
+
+@font-face {
+  font-family: 'Junicode';
+  src:  url('fonts/junicode-bold.woff?#iefix') format('woff');
+  font-weight:bold;
+}
+
+@font-face {
+  font-family: 'Junicode';
+  src:  url('fonts/junicode-italic.woff?#iefix') format('woff');
+  font-style:italic;
+}
+
+@font-face {
+  font-family: 'LombardicCaps';
+  src:  url('fonts/lombardiccaps.ttf#iefix') format('truetype');
+}
+
+body {
+  font-family:Junicode,Times,Serif;
+  background-color:white;
+  color: black;
+}
+    
+#heroimage {
+  display:block;
+  width:100%;
+  }
+
+th, td {                                            /*Table Stuff*/
+  padding:2px;
+  text-align: left;
+  }
+
+tr:nth-child(even) {background-color: WhiteSmoke}
+
+
+
+a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
+    color: yellow;
+    font-family: LombardicCaps;
+    background-color: Maroon;
+    font-size: 1em;
+    box-shadow: 0 2px 4px grey;
+    padding:0px 2px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+a.navbutton:hover {
+    box-shadow: 0 0 20px white, 0px 0px 30px Yellow;
+}
+
+a.navbutton:before {    /*decorative bits on nav buttons*/
+  content:' ( '
+}
+  
+a.navbutton:after {     /*decorative bits on nav buttons*/
+  content:' )'
+}
+  
+ul.navbar {       /*left-facing navigation bar composed of navbuttons*/
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  }
+  
+li.navbar {       
+  padding-top:2px;
+  }
+
+li.navbar a {     /*set button width for navbar*/
+  width:308px;}
+  
+  
+#myface {               /*Styling the picture of me*/
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/**/
+
+#hero:hover #herotitletooltip {
+    display:inline-block;
+    visibility:visible;
+    z-index:2;
+  }
+    
+  #herotitletooltip {
+    visibility: hidden;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-style: dotted;
+    border-color:MediumBlue;
+    padding: .2em .2em .2em .2em;
+    z-index:2;
+    position:absolute;
+    top:50px;
+    left:610px;
+    right:275px;
+    box-shadow: 10px 10px 5px darkgrey;
+    border-radius: 10px;
+  }
+
+/*
+  border: 8px inset GoldenRod;
+  outline: 8px outset GoldenRod;
+
+  transform: translate(-50%, -50%);
+  line-height:400px;
+
+#pageheaderbar {
+  display:block;
+  background-color:Maroon;
+  height: 510px; 
+  
+}
+
+ #reliquaries_hero {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:30px;
+
+}
