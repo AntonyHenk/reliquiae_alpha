@@ -37,7 +37,7 @@ th, td {                                            /*Table Stuff*/
   text-align: left;
   }
 
-tr:nth-child(even) {background-color: WhiteSmoke}
+tr:nth-child(even) {background-color: lightgrey}
 
 
 
