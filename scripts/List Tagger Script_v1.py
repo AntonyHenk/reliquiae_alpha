@@ -7,6 +7,7 @@ elif ask_head.lower() == "n":
     is_headed_list = False
 else:
     print("Bad input! Run me again.")
+    quit("List Tagger Script_v1.py")
 incomplete_tagged_list_items = input("List items? Use syntax: 'De ligno,De sepulcro,De vestimento'").replace(",", "</item><item>")
 tagged_list_items = f"<item>{incomplete_tagged_list_items}</item>"
 simple_or_Inline = input("(S)imple list or (I)nline list?")
@@ -16,6 +17,7 @@ elif simple_or_Inline.lower() == "i":
     is_simple = False
 else:
     print("Bad input! Run me again.")
+    quit("List Tagger Script_v1.py")
 if is_simple and is_headed_list:
     print(f'<list rend="simple">{tagged_head_text}{tagged_list_items}</list>')
 elif not is_simple and is_headed_list:
