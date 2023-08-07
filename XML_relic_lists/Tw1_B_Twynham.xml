@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI> 
+<!--[-->
+<!--ENTITY % entities_list SYSTEM
+'https://langeslag.uni-goettingen.de/entities.txt'   >
+%entities_list;]-->
+
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="simple_lists.css"?> <!--This is for turning on the css stylesheet. change the file as needed-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Relic list: Twynham, Augustinian priory of Christchurch, relics in 13th c. altar dedications, in cartulary [Tw1.b*] </title><!-- Title of the work you are editing -->
+        <editor>Antony Henk</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Loca Sanctorum: English Medieval Relic Lists Online <date>2023</date>; not for distribution.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit><!-- Modify and expand as required -->
+          <witness xml:id="Tw">
+            <abbr type="siglum">Tw</abbr>
+            <name>BL Cotton MS Tiberius D VI, Part II<!--locusinfo-->, ff. 149v-150r<!--/locusinfo--></name>
+            <locus from="149v" to="150r"/>
+            <desc>Relics in altar dedications performed in 1221, in cartulary. Material in a different hand and ascribed to a different date than that directly proceeding it; see item Tw1.A*.</desc>
+            <msDesc>
+              <msIdentifier>
+                <settlement>London</settlement>
+                <repository>British Library</repository>
+                <collection>Cotton</collection>
+                <idno>Tiberius D VI, Part II</idno>
+                <msName>BL Cotton MS Tiberius D VI, Part II</msName>
+              </msIdentifier>
+            </msDesc>
+          </witness>
+          <witness xml:id="Tw_T">
+            <abbr type="siglum">Tw_T</abbr>
+            <name>I. G. Thomas, 'The Cult of Saints' Relics in Medieval England', PhD Diss., University of London (1974)</name>
+            <locus from="527" to="528"/>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+    </encodingDesc>
+    <revisionDesc> 
+      <listChange>
+        <change when="2023-07-08" who="AH">Split list off from Tw1, creating Tw1.A and .B, updated descriptions and other materials.</change>
+        <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName</change>
+        <change when="2023-06-06" who="AH">Initial draft. Encoded head inside of list this time. Some hacky business to make the trailer display
+        as desired.</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:lang="la">
+      <div type="list">
+        <pb resp="#Tw_T" n="524"/>
+        <pb resp="#Tw" n="149v"/>
+        <list rend="simple">
+          <head><hi><handShift/><span type="note"><note resp="#Tw_T">From this point, in another hand.</note>Anno</span> 
+            ab Incarnatione MCCXXI<!--1221-->, dedicatum est altare sancti Michaelis arcangeli a domino Nicholao episcopo Insularum, 
+            et hec sunt reliquie que in eo sunt condite:</hi></head> 
+          <item>De loco in quo natus fuit Dominus</item>  
+          <item>De presepio in quo Dominus fuit positus</item>  
+          <item>De cunabulis Domini</item>  
+          <item>De petra super quem steterunt pedes Domini quando oblatus fuit in templo</item>  
+          <item>De loco Iessemani</item>  
+          <item>De sepulcro Domini</item>  
+          <item>De monte Syon</item>  
+
+       <pb resp="#Tw" n="150r"/>
+          <item>De petra <span type="note">....<note resp="#Tw_T">(mutilated)</note></span></item><!--not ideal because gap exists for this-->  
+          <item>De ligno quod Dominus plantavit manibus suis</item>  
+          <item>De petra super quam Dominus commedit cum discipulis suis</item>  
+          <item>De mensa Domini</item>  
+          <item>De petra ubi ascendit in celum</item>  
+          <item>De petra super quam locutus est Dominus cum muliere Samaritana</item>  
+          <item>De petra super quam oravit ad Patrem, et factus est sudor eius sicut gutta sanguinis decurrentis in terram</item>  
+          <item>De vestimentis beate Marie</item>  
+          <item>De sepulcro et lapide de quo gloriosa virgo Maria migravit a celo</item>  
+          <item>Reliquie sanctorum martyrum Sergi et Bachi</item>  
+          <item>De sepulcro sanctorum confessorum Hylarii et Patricii</item> 
+
+      <pb resp="#Tw_T" n="528"/>
+
+          <item>De ossibus sancti Patricii</item> 
+          <item>De ossibus sancti Columbani abbatis</item>  
+          <item>De casula sancti Remigii cum qua cantavit</item>  
+          <item>De palla altaris eiusdem</item>  
+          <item>De panno in quo requievit per CCCC annos</item>  
+          <item>De sandalibus eiusdem</item>  
+          <item>De ossibus XI Milium Virginum</item>  
+          <item>De ossibus sancte Agnetis virginis</item>  
+          <item>De sepulcro sancte Anne matris beate virginis Marie</item>
+          <!-- <trailer><hi>Eodem anno eodem die et ab eodem episcopo, dedicatum est altare 
+          sancti Martini, et omnes reliquie suprascripte in eo sunt condite</hi></trailer> - how this line SHOULD look
+          
+          I can't get this to show up in CSS as desired at the moment, so I had to do something hacky below-->
+        </list>
+          <list rend="simple"><head><hi>Eodem anno eodem die et ab eodem episcopo, dedicatum est altare 
+          sancti Martini, et omnes reliquie suprascripte in eo sunt condite</hi></head>
+          <item></item>
+        </list>
+          
+      </div>
+    </body>
+  </text>
+</TEI>
