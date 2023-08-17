@@ -8,7 +8,7 @@
 <!-- I AM A TEST LIST! DO NOT PUBLISH ME TO LOCA SANCTORUM ! -->
 
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="simple_lists.css"?> <!--This is for turning on the css stylesheet. change the file as needed-->
+<?xml-stylesheet type="text/css" href="TEST_simple_lists.css"?> <!--This is for turning on the css stylesheet. change the file as needed-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>

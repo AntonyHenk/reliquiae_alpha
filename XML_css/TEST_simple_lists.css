@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Junicode';
+    src:  url('/fonts/junicode.woff?#iefix') format('woff');
+  }
+  
+  TEI {
+    font-family: Junicode,Times,Serif; 
+  }
+  
+  teiHeader {
+    padding-left: 20px;
+    display: block;
+    text-align: left;
+    margin-bottom: 1.5em;
+    background-color:lightgrey;
+  }
+  
+  title {
+      font-size: 200%;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  publicationStmt {
+    display:none;}
+    
+  revisionDesc {
+    display:none;}
+    
+  /* Unhide revisionDesc after figuring out how to display attributes, if possible
+  revisionDesc:before {
+    content: 'Revision History';
+    }
+    */
+    
+  editor:before {
+     content: 'Edited for the web by ';
+  }
+    
+  editor {
+    display:block;
+  }
+  
+  
+  witness {
+    display:block;
+    
+  }
+  
+  listWit:before {    
+      content: 'Conspectus Siglorum';
+      font-size: medium;
+      font-weight: bold;
+      display: inline;
+      color:black;
+      padding: 2px;
+      text-decoration:underline;
+  }
+  
+  
+  listWit:after {
+    margin-top: 1.5em;
+    content: "This is a digital edition of the PRINTED editon of the text, not of the MS itself. For reader convenience, rubrications and other similar elements are represented with rusty coloration and slightly larger font, but this is NOT meant as a faithful recreation of manuscript appearance. To view the footnotes of the original editor, hover your cursor over the words marked in green. Be aware that these emendations do not appear in control+F searches of this page! If you need to search all the material, please contact me here: antonyhenk@gmail.com";
+    display: inline-block;
+    color:black;
+    border-bottom: 1px double black;
+    border-top:1px double black;
+  }
+  
+  abbr[type="siglum"] {
+    font-weight: bold;
+    color:white;
+    background-color:DimGrey;
+    width:75px;
+    margin-top:2px;
+    display:inline-block;
+  }
+  
+  name:after {
+    content:". ";
+    }
+  
+  desc {
+    font-style: italic;
+  }
+  
+  msDesc {      /* Hidden for now, since the information is also given in listWit>witness>name anyway*/
+    display:none;
+    }
+  
+  head {
+    display:inline-block;
+    }
+  
+  hi {
+    font-size:125%;
+    color:FireBrick;
+    font-weight: bold;
+  }
+  
+  list[rend="simple"] {
+    display: block;
+    text-align: left;
+    margin-bottom: 1.5em;
+    background-color:white;
+     margin-left: 20px;
+  }
+  
+  list[rend="inline"] {
+    display: block;
+    margin-bottom: 1.5em;
+    margin-left: 20px;
+  }
+  
+  item {
+    display: block;
+  } 
+  
+  item[ana="nonbody"] {
+    display: block;
+    color:blue;
+  }
+
+  item[ana="gr_body"] {
+    display: block;
+    color:darkred;
+  }
+
+  item[ana="uncertain"] {
+    display: block;
+    color:grey;
+  }
+
+  name[ref="#IHS"] {
+    text-decoration-line: underline;
+  }
+
+  span[type="note"] {
+    font-weight:bold;
+    color:green;
+  }
+  
+  span[type="note"]:hover note {
+    display: inline; 
+  }
+    
+  note {
+    display:none;
+    text-align: left;
+    color: white;
+    background-color: grey;
+    padding: .5em .5em .5em .5em;
+}
+
+lb {
+        display:block;
+        height: 1em;
+      }
