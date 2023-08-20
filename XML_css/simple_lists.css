@@ -97,6 +97,7 @@
     color:FireBrick;
     font-weight: bold;
   }
+  /*This <hi> above is what I wanted to use to make <trailer> display like <head> does. However, for some reason, <hi> doesn't work in if I encode it in <trailer>... */
   
   list[rend="simple"] {
     display: block;
