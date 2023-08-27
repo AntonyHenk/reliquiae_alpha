@@ -6,19 +6,54 @@
     <title>Loca Sanctorum: Relic Inventories and Relic Lists of Early England</title>
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
   </head>
+  <style>
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      border-style: 1px solid maroon;
+      color:black;
+      font-size: 1em;
+      text-align: center;
+      padding: 0px 2px;
+
+      position:absolute;
+      z-index: 1;
+      top: -5px;
+      left:105%;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+  </style>
   <body>
        <div id="hero"><span id="herotitletooltip">The Bayeux Tapestry here depicts Harold Godwinson swearing an oath to William the Conqueror over two reliquaries. The left-most reliquary is on a portable bier.</span>
     <img id="heroimage" src="/images/bayeux_hero.jpg"></div>
     <p>This Neocities website is a primary phase of my PhD dissertation on the topic of relics and relic veneration in Early England. Eventually, this website will host TEI-compliant XML editions of the corpus of relic lists and relic inventories for England, up to ca. 1300. This site also serves to store and organise basic metadata on the relic list corpus. Please see the other pages on this website for more information.</p>
-    
+    <section>
     <ul class="navbar">
-      <li class="navbar"><a class="navbutton" id="navbar_button" href="reliclists.html" target="_blank">Relic List Catalogue</a> View a tabular catalogue of the relic lists.</li>
-      <li class="navbar"><a class="navbutton" id="navbar_button" href="XMLreliclists_main.html" target="_blank">View Relic Lists</a> View the currently complete web editions of the relic lists.</li> 
-      <li class="navbar"><a class="navbutton" id="navbar_button" href="https://docs.google.com/spreadsheets/d/1iguUwVL0wUUrndFCb4fPLAMHnDjlfiax5XvupK6Uq0s/edit?usp=sharing" target="_blank">Progress Tracker</a> View a Google Sheet tracking my current progress on this project.</li>
-      <li class="navbar"><a class="navbutton" id="navbar_button" href="secondary.html" target="_blank">Bibliography</a> Some secondary bibliography.</li>
-      <li class="navbar"><a class="navbutton" id="navbar_button" href="about.html" target="_blank">About This Project</a> Find my contact information and view more about this project.</li>
-      <li class="navbar"><a class="navbutton" id="navbar_button" href="recommended.html" target="_blank">Tools I Use</a> A list of software and other resources I use.</li>
+      <div class="tooltip"><li class="navbar"><a class="navbutton" id="navbar_button" href="reliclists.html" target="_blank">Relic List Catalogue</a></li>
+      View a tabular catalogue of the relic lists.</div>
+      <div class="tooltip"><li class="navbar"><a class="navbutton" id="navbar_button" href="XMLreliclists_main.html" target="_blank">View Relic Lists</a></li>
+        <span class="tooltiptext">View the currently complete alpha web editions of the relic lists</span>
+      </div> 
+      <div class="tooltip"><li class="navbar"><a class="navbutton" id="navbar_button" href="https://docs.google.com/spreadsheets/d/1iguUwVL0wUUrndFCb4fPLAMHnDjlfiax5XvupK6Uq0s/edit?usp=sharing" target="_blank">Progress Tracker</a></li>
+        <span class="tooltiptext">View a Google Sheet tracking my current progress on this project.</span>
+      </div>
+      <div class="tooltip"><li class="navbar"><a class="navbutton" id="navbar_button" href="secondary.html" target="_blank">Bibliography</a></li>
+        <span class="tooltiptext">Some secondary bibliography.</span>
+      </div>
+      <div class="tooltip"><li class="navbar"><a class="navbutton" id="navbar_button" href="about.html" target="_blank">About This Project</a></li>
+        <span class="tooltiptext">Find my contact information and view more about this project.</span>
+      </div>
+      <div class="tooltip"><li class="navbar"><a class="navbutton" id="navbar_button" href="recommended.html" target="_blank">Tools I Use</a></li>
+        <span class="tooltiptext">A list of software and other resources I use.</span>
+      </div>
       </ul>
+
+    <article>
+     <h1>Loca Sanctorum News and Updates></h1> 
+     <iframe src="newsfeed.html" title="Loca Sanctorum News and Updates" style="height:400px"></iframe> 
+    </article>
+  </section>
     <br>
     <img src="/neocities.png">
   </body>

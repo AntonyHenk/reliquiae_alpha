@@ -68,6 +68,8 @@ ul.navbar {       /*left-facing navigation bar composed of navbuttons*/
   list-style-type: none;
   margin:0;
   padding:0;
+  float: left;        /*setting up float columns*/
+  width: 50%;         /*setting up float columns*/
   }
   
 li.navbar {       
@@ -76,7 +78,18 @@ li.navbar {
 
 li.navbar a {     /*set button width for navbar*/
   width:308px;}
-  
+
+article {         /*Styling the News section*/
+  float: left;
+  width: 50%;
+  border-style: medium inset Maroon;
+}
+
+section::after {        /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
   
 #myface {               /*Styling the picture of me*/
   display:block;
