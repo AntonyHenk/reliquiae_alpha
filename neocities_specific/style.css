@@ -98,7 +98,7 @@ li.navbar a {     /*set button width for navbar*/
 
 article {         /*Styling the News section*/
   float: left;
-  width: 50%;
+  width: 30%;
   border-style: medium inset Maroon;
 }
 
