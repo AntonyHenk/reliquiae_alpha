@@ -99,8 +99,9 @@ li.navbar a {     /*set button width for navbar*/
 
 article {         /*Styling the News section*/
   float: left;
-  width: 30%;
-  border-style: medium inset Maroon;
+  display: block;
+  padding-left:10px;
+  align-content: center;
 }
 
 section::after {        /* Clear floats after the columns */
