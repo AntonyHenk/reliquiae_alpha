@@ -54,7 +54,10 @@ a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
 
 a.navbutton:hover {
     box-shadow: 0 0 20px white, 0px 0px 30px Yellow;
-}
+  } 
+a.navbutton:hover .tooltiptext {
+      visibility: visible;
+    }
 
 a.navbutton:before {    /*decorative bits on nav buttons*/
   content:' ( '
@@ -69,7 +72,7 @@ ul.navbar {       /*left-facing navigation bar composed of navbuttons*/
   margin:0;
   padding:0;
   float: left;        /*setting up float columns*/
-  width: 50%;         /*setting up float columns*/
+  width: 308px;         /*setting up float columns*/
   }
   
 li.navbar {       
@@ -79,7 +82,7 @@ li.navbar {
 li.navbar a {     /*set button width for navbar*/
   width:308px;}
 
-  .tooltip .tooltiptext {       /*Tool tips for the navbar buttons...*/
+  .tooltiptext {       /*Tool tips for the navbar buttons...*/
     visibility: hidden;
     border-style: 1px solid maroon;
     color:black;
@@ -88,13 +91,11 @@ li.navbar a {     /*set button width for navbar*/
     padding: 0px 2px;
 
     position:absolute;
-    z-index: 1;
+    z-index: 2;
     top: -5px;
     left:105%;
   }
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+
 
 article {         /*Styling the News section*/
   float: left;
