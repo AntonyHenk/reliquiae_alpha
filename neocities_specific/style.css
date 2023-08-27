@@ -82,7 +82,7 @@ li.navbar {
 li.navbar a {     /*set button width for navbar*/
   width:308px;}
 
-  .tooltiptext {       /*Tool tips for the navbar buttons...*/
+  li.navbar.navbutton.tooltiptext {       /*Tool tips for the navbar buttons...*/
     visibility: hidden;
     border-style: 1px solid maroon;
     color:black;
@@ -92,10 +92,11 @@ li.navbar a {     /*set button width for navbar*/
 
     position:absolute;
     z-index: 2;
-    top: -5px;
-    left:105%;
   }
 
+li.navbar.navbutton:hover .tooltiptext {
+  visibility: visible;
+}
 
 article {         /*Styling the News section*/
   float: left;
