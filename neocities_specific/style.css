@@ -94,7 +94,7 @@ li.navbar {
 li.navbar a {     /*set button width for navbar*/
   width:308px;}
 
-  li.navbar.tooltiptext {       /*Tool tips for the navbar buttons...*/
+  li.navbar .tooltiptext {       /*Tool tips for the navbar buttons...*/
     visibility: hidden;
     border-style: 1px solid maroon;
     color:black;
