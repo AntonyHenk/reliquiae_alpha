@@ -59,6 +59,17 @@ a.navbutton:hover .tooltiptext {
       visibility: visible;
     }
 
+a.navbutton.tooltiptext {       /*Tool tips for the navbar buttons...*/
+    visibility: hidden;
+    border-style: 1px solid maroon;
+    color:black;
+    font-size: 1em;
+    text-align: center;
+    padding: 0px 2px;
+    position:absolute;
+    z-index: 2;
+    }
+
 a.navbutton:before {    /*decorative bits on nav buttons*/
   content:' ( '
 }
@@ -82,11 +93,11 @@ li.navbar {
 li.navbar a {     /*set button width for navbar*/
   width:308px;}
 
-  a.li.navbar.navbutton:hover .tooltiptext {
+  a.li.navbar:hover .tooltiptext {
     visibility: visible;
   }
 
-  a.li.navbar.navbutton.tooltiptext {       /*Tool tips for the navbar buttons...*/
+  a.li.navbar.tooltiptext {       /*Tool tips for the navbar buttons...*/
     visibility: hidden;
     border-style: 1px solid maroon;
     color:black;
