@@ -55,9 +55,6 @@ a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
 a.navbutton:hover {
     box-shadow: 0 0 20px white, 0px 0px 30px Yellow;
   } 
-a.navbutton:hover .tooltiptext {
-      visibility: visible;
-    }
 
 a.navbutton.tooltiptext {       /*Tool tips for the navbar buttons...*/
     visibility: hidden;
@@ -69,6 +66,10 @@ a.navbutton.tooltiptext {       /*Tool tips for the navbar buttons...*/
     position:absolute;
     z-index: 2;
     }
+
+a.navbutton:hover .tooltiptext {
+  visibility: visible;
+    }    
 
 a.navbutton:before {    /*decorative bits on nav buttons*/
   content:' ( '
@@ -93,10 +94,6 @@ li.navbar {
 li.navbar a {     /*set button width for navbar*/
   width:308px;}
 
-  a.li.navbar:hover .tooltiptext {
-    visibility: visible;
-  }
-
   a.li.navbar.tooltiptext {       /*Tool tips for the navbar buttons...*/
     visibility: hidden;
     border-style: 1px solid maroon;
@@ -107,6 +104,11 @@ li.navbar a {     /*set button width for navbar*/
     position:absolute;
     z-index: 2;
   }
+
+  a.li.navbar:hover .tooltiptext {
+    visibility: visible;
+  }
+
 
 article {         /*Styling the News section*/
   float: left;
