@@ -39,8 +39,6 @@ th, td {                                            /*Table Stuff*/
 
 tr:nth-child(even) {background-color: lightgrey}
 
-
-
 a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
     color: yellow;
     font-family: LombardicCaps;
@@ -55,21 +53,6 @@ a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
 a.navbutton:hover {
     box-shadow: 0 0 20px white, 0px 0px 30px Yellow;
   } 
-
-/*a.navbutton.tooltiptext {       Tool tips for the navbar buttons...
-    visibility: hidden;
-    border-style: 1px solid maroon;
-    color:black;
-    font-size: 1em;
-    text-align: center;
-    padding: 0px 2px;
-    position:absolute;
-    z-index: 2;
-    }
-
-a.navbutton:hover .tooltiptext {
-  visibility: visible;
-    }    */
 
 a.navbutton:before {    /*decorative bits on nav buttons*/
   content:' ( '
@@ -96,16 +79,15 @@ li.navbar a {     /*set button width for navbar*/
 
   li.navbar .tooltiptext {       /*Tool tips for the navbar buttons...*/
     visibility: hidden;
+    display: inline-block;
     border-style: 1px solid maroon;
     color:black;
     font-size: 1em;
     text-align: center;
     padding: 0px 2px;
-    position:absolute;
-    z-index: 2;
   /* Position the tooltip */
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     top: -20px;
     left: 150%;
   }
@@ -115,8 +97,8 @@ li.navbar a {     /*set button width for navbar*/
   }
 
 
-article {         /*Styling the News section*/
-  float: left;
+#updates {         /*Styling the News section*/
+  float: right;
   display: block;
   padding-left:10px;
   align-content: center;
