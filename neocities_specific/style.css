@@ -49,8 +49,8 @@ a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
     text-decoration: none;
     display:inline-block;
 }
-
-a.navbutton:hover {
+                                                              /*glow on the buttons*/
+a.navbutton:hover {                                     
     box-shadow: 0 0 20px white, 0px 0px 30px Yellow;
   } 
 
@@ -76,23 +76,30 @@ li.navbar {
 
 li.navbar a {     /*set button width for navbar*/
   width:308px;}
+  
+  .tooltip {
+    position: relative;
+    display: block;
+    }
 
-  li.navbar .tooltiptext {       /*Tool tips for the navbar buttons...*/
+  .tooltip span.tooltiptext {       /*Tool tips for the navbar buttons...*/
     visibility: hidden;
-    display: inline-block;
-    border-style: 1px solid maroon;
-    color:black;
+    display: block;
+    color:white;
+    background-color:MediumBlue;
+    box-shadow: 0 2px 4px grey;
+    height: 26px;
     font-size: 1em;
     text-align: center;
-    padding: 0px 2px;
+    width:450px;
   /* Position the tooltip */
     position: absolute;
-    z-index: 2;
-    top: -20px;
-    left: 150%;
+    z-index: 3;
+    top: 2px;
+    left: 100%;
   }
 
-  li.navbar:hover .tooltiptext {
+  .tooltip:hover span.tooltiptext {
     visibility: visible;
   }
 
