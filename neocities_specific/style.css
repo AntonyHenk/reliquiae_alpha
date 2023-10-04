@@ -75,7 +75,7 @@ li.navbar {
   }
 
 li.navbar a {     /*set button width for navbar*/
-  width:308px;}
+  width:400px;}
   
   .tooltip {
     position: relative;
@@ -91,7 +91,7 @@ li.navbar a {     /*set button width for navbar*/
     height: 26px;
     font-size: 1em;
     text-align: center;
-    width:450px;
+    width:500px;
   /* Position the tooltip */
     position: absolute;
     z-index: 3;
@@ -107,7 +107,7 @@ li.navbar a {     /*set button width for navbar*/
 #updates {         /*Styling the News section*/
   float: right;
   display: block;
-  padding-left:10px;
+  padding-left:20px;
   align-content: center;
 }
 
