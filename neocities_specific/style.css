@@ -48,6 +48,7 @@ a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
     padding:0px 2px;
     text-decoration: none;
     display:inline-block;
+    margin:auto;
 }
                                                               /*glow on the buttons*/
 a.navbutton:hover {                                     
@@ -67,7 +68,7 @@ ul.navbar {       /*left-facing navigation bar composed of navbuttons*/
   margin:0;
   padding:0;
   float: left;        /*setting up float columns*/
-  width: 315px;         /*setting up float columns*/
+  width: 345px;         /*setting up float columns*/
   }
   
 li.navbar {       
@@ -75,7 +76,7 @@ li.navbar {
   }
 
 li.navbar a {     /*set button width for navbar*/
-  width:400px;}
+  width:345px;}
   
   .tooltip {
     position: relative;
@@ -90,13 +91,14 @@ li.navbar a {     /*set button width for navbar*/
     box-shadow: 0 2px 4px grey;
     height: 26px;
     font-size: 1em;
-    text-align: center;
-    width:500px;
+    text-align: left;
+    width:450px; 
+    padding-left: 1em;
   /* Position the tooltip */
     position: absolute;
     z-index: 3;
     top: 2px;
-    left: 100%;
+    left: 102%;
   }
 
   .tooltip:hover span.tooltiptext {
@@ -105,10 +107,10 @@ li.navbar a {     /*set button width for navbar*/
 
 
 #updates {         /*Styling the News section*/
-  float: right;
+  float: left;
   display: block;
-  padding-left:20px;
-  align-content: center;
+  padding-left:30px;        /*removing to fix alignment*/  
+  margin: auto;
 }
 
 section::after {        /* Clear floats after the columns */
