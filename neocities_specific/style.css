@@ -150,6 +150,11 @@ section::after {        /* Clear floats after the columns */
     border-radius: 10px;
   }
 
+  a.secretlink:link, a.secretlink:visited {
+    color: white;
+    text-decoration: none;
+  }
+
 /*
   border: 8px inset GoldenRod;
   outline: 8px outset GoldenRod;

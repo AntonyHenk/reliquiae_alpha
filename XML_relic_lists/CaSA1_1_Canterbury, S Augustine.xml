@@ -11,7 +11,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Relic list: Canterbury, probably 12th c. additions in gospel book [CSA]</title><!-- Title of the work you are editing -->
+        <title>Relic list: Canterbury, probably 12th c. additions in gospel book [CaSA1_1]</title><!-- Title of the work you are editing -->
         <editor>Antony Henk</editor>
       </titleStmt>
       <publicationStmt>
@@ -19,8 +19,8 @@
       </publicationStmt>
       <sourceDesc>
         <listWit><!-- Modify and expand as required -->
-          <witness xml:id="CSA">
-            <abbr type="siglum">CSA</abbr>
+          <witness xml:id="CaSA1">
+            <abbr type="siglum">CaSA1</abbr>
             <name>Corpus Christi College Cambridge MS 286<!--locusinfo-->, f. iv<!--/locusinfo--></name>
             <locus from="iv" to="iv"/>
             <desc>On a flyleaf of a gospel book.</desc>
@@ -34,8 +34,8 @@
               </msIdentifier>
             </msDesc>
           </witness>
-          <witness xml:id="CSA_J">
-            <abbr type="siglum">CSA_J</abbr>
+          <witness xml:id="CaSA1_J">
+            <abbr type="siglum">CaSA1_J</abbr>
             <name>James, M. R. Descriptive Catalogue of the Manuscripts in the Library of Corpus Christi College Cambridge, 2 vols. (Cambridge, 1912),
              II<!--locusinfo-->, p. 55<!--/locusinfo--></name>
             <locus from="55" to="55"/>
@@ -57,8 +57,8 @@
   <text>
     <body xml:lang="la">
       <div type="list">
-        <pb resp="#CSA_J" n="55"/>
-        <pb resp="#CSA" n="iv"/><!--verso of flyleaf-->
+        <pb resp="#CaSA1_J" n="55"/>
+        <pb resp="#CaSA1" n="iv"/><!--verso of flyleaf-->
           <list rend="inline">
             <head><hi>Héé sunt reliquie in uno paruo nigro scrinio flore uno signato.</hi></head>
               <item>De ligno domini plures particule.</item>

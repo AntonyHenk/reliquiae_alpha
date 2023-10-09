@@ -13,7 +13,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Relic list: Testby secular cathedral, relics in 9th c. altar dedications, in cartulary [TEST*] </title><!-- Title of the work you are editing -->
+        <title>Relic list: Testby secular cathedral, relics in 9th c. altar dedications, in cartulary [Test1_1] </title><!-- Title of the work you are editing -->
         <editor>Antony Henk</editor>
       </titleStmt>
       <publicationStmt>
@@ -21,8 +21,8 @@
       </publicationStmt>
       <sourceDesc>
         <listWit><!-- Modify and expand as required -->
-          <witness xml:id="TsT1">
-            <abbr type="siglum">TsT1</abbr>
+          <witness xml:id="Test1">
+            <abbr type="siglum">Test1</abbr>
             <name>London, British Library MS Cotton Testberius Z XIII<!--locusinfo-->, ff. 666v-669r<!--/locusinfo--></name>
             <locus from="666v" to="669r"/>
             <desc>Relics in altar dedications performed in 1066, in wizard's grimoire. Material in a different hand and ascribed to a different date than that directly proceeding it.</desc>
@@ -36,9 +36,9 @@
               </msIdentifier>
             </msDesc>
           </witness>
-          <witness xml:id="Tst_X">
-            <abbr type="siglum">Tw_T</abbr>
-            <name>Max Xustermann, 'A Relic List in a Wizard Grimoire', Speculum 66 (1966):13-17.</name>
+          <witness xml:id="Test1_X">
+            <abbr type="siglum">Test1_X</abbr>
+            <name>Max Xustermann, 'A Relic List in a Wizard Grimoire', Speculum 66 (1966):420-69.</name>
             <locus from="13" to="30"/>
           </witness>
         </listWit>
@@ -48,17 +48,17 @@
       <variantEncoding method="parallel-segmentation" location="internal"/>
     </encodingDesc>
     <revisionDesc> 
-      <listChange>
-        <change when="2023-06-06" who="AH">Set up this file as a testing list.
-        as desired.</change>
+      <listChange>     
+        <change when="2023-06-06" who="AH">Made some adjustments in preparation for posting this in a testing area.</change>
+        <change when="2023-06-06" who="AH">Set up this file as a testing list.</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
   <text>
     <body xml:lang="la">
       <div type="list">
-        <pb resp="#Tst_X" n="13"/>
-        <pb resp="#Tst1" n="666v"/>
+        <pb resp="#Test1_X" n="13"/>
+        <pb resp="#Test1" n="666v"/>
         <list rend="simple">
           <head><hi><handShift/><span type="note"><note resp="#Tw_T">From this point, in another hand.</note>Anno</span> 
             ab Incarnatione MLXVI<!--1066-->, dedicatum est altare sancti Michaelis arcangeli a domino Nicholao episcopo Insularum, 
@@ -71,19 +71,19 @@
           <item ana="nonbody">De sepulcro <name role="XPS" ref="#IHS">Domini</name></item>  
           <item ana="nonbody">De monte Syon</item>  
 
-       <pb resp="#Tst1" n="667r"/>
+       <pb resp="#Test1" n="667r"/>
           <item ana="nonbody">De petra <span type="note">....<note resp="#Tw_T">(mutilated)</note></span></item><!--not ideal because gap exists for this-->  
           <item ana="nonbody">De vestimentis beate <name role="MotherM" ref="#Mary001">Marie</name></item>  
           <item ana="nonbody">De sepulcro et lapide de quo gloriosa virgo <name role="MotherM" ref="#Mary001">Maria</name> migravit a celo</item>  
           <item ana="uncertain">Reliquie sanctorum martyrum Sergi et Bachi</item>  
           <item ana="nonbody">De sepulcro sanctorum confessorum Hylarii et Patricii</item> 
 
-      <pb resp="#Tst_X" n="14"/>
+      <pb resp="#Test1_X" n="14"/>
 
           <item ana="gr_body">De ossibus sancti <name ref="#Pat001">Patricii</name></item> 
           <item ana="gr_body">De ossibus sancti <name role="abbot" ref="#Columbanus001">Columbani</name> abbatis</item>  
-          <item ana="nonbody">De casula sancti Remigii cum qua cantavit</item>  
-          <item ana="nonbody">De palla altaris eiusdem</item>  
+          <item ana="nonbody">De casula sancti <name role="bishop" ref="#Remigius001">Remigii</name> cum qua cantavit</item>  
+          <item ana="nonbody">De palla altaris eiusdem</item><!--How will I account for these scenarios? Use @ana? Place an empty name tag?-->  
           <item ana="nonbody">De panno in quo requievit per CCCC annos</item>  
           <item ana="nonbody">De sandalibus eiusdem</item>  
           <item ana="gr_body">De ossibus <name ref="#11MillVirgins">XI Milium Virginum</name></item>  
