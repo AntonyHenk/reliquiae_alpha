@@ -11,7 +11,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Relic list: Twynham, Augustinian priory of Christchurch, relics in 12th and 13th c. altar dedications, in cartulary [Tw1.A*] </title><!-- Title of the work you are editing -->
+        <title>Relic list: Twynham, Augustinian priory of Christchurch, relics in 12th and 13th c. altar dedications, in cartulary [Tw1_1.A] </title><!-- Title of the work you are editing -->
         <editor>Antony Henk</editor>
       </titleStmt>
       <publicationStmt>
@@ -46,7 +46,8 @@
       <variantEncoding method="parallel-segmentation" location="internal"/>
     </encodingDesc>
     <revisionDesc> 
-      <listChange>
+      <listChange><!--Dates go YYYY-DD-MM-->
+        <change when="2023-13-10" who="AH">Revisions of identifiers to match the listID system</change>
         <change when="2023-07-08" who="AH">Split list off from Tw1, creating Tw1.A and .B, updated descriptions and other materials.</change>
         <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName</change>
         <change when="2023-06-06" who="AH">Initial draft. Encoded head inside of list this time. Some hacky business to make the trailer display
@@ -146,7 +147,7 @@
           <head><hi>Eodem anno et eodem die et ab eodem episcopo, dedicatum est altare sancti Edmundi, in quo continentur ille reliquie:</hi></head> 
           <item>De ossibus sancti Petri apostoli</item>  
           <item><span type="note">De ossibus sanctorum martyrum Laurencii, Victoris, Blasii, Ypoliti, Oswaldi regis
-            <note resp="AH">This manuscript contains another slightly later relic list for an altar dedication undertaken in 1221, in a different hand, see siglum Tw1_B*- AH</note></span></item>
+            <note resp="AH">This manuscript contains another slightly later relic list for an altar dedication undertaken in 1221, in a different hand, see listID Tw1_1.B - AH</note></span></item>
         </list>  
            
       </div>

@@ -23,21 +23,20 @@
             <abbr type="siglum">CaSA1</abbr>
             <name>Corpus Christi College Cambridge MS 286<!--locusinfo-->, f. iv<!--/locusinfo--></name>
             <locus from="iv" to="iv"/>
-            <desc>On a flyleaf of a gospel book.</desc>
+            <desc>Additions, probably 12th. c., on a flyleaf of a gospel book</desc>
             <msDesc>
               <msIdentifier>
                 <settlement>Cambridge</settlement>
                 <repository>Corpus Christi College</repository>
                 <!--collection></collection-->
                 <idno>286</idno>
-                <msName>Corpus Christi College Cambridge MS 286</msName>
+                <msName>Cambridge, Corpus Christi College MS 286</msName>
               </msIdentifier>
             </msDesc>
           </witness>
           <witness xml:id="CaSA1_J">
             <abbr type="siglum">CaSA1_J</abbr>
-            <name>James, M. R. Descriptive Catalogue of the Manuscripts in the Library of Corpus Christi College Cambridge, 2 vols. (Cambridge, 1912),
-             II<!--locusinfo-->, p. 55<!--/locusinfo--></name>
+            <name>M. R. James, ‘286. Evangelia Cantuariensia’, in Descriptive Catalogue of the Manuscripts in the Library of Corpus Christi College Cambridge, vol. 2, 2 vols (1912), 52–56, at <!--locusinfo--> p. 55<!--/locusinfo--></name>
             <locus from="55" to="55"/>
             <!--what's the tagging  stuff for a book, so I can style this correctly? AH-->
           </witness>
@@ -49,6 +48,7 @@
     </encodingDesc>
     <revisionDesc> 
       <listChange>
+        <change when="2023-10-13" who="AH">Updating of listID and other header elements</change>
         <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName, fixed header and linebreak issue</change>
         <change when="2023-05-06" who="AH">Initial draft. Ideally needs basis on a newer printing. Hacky line break left in for now.</change>
       </listChange>
@@ -76,11 +76,7 @@
               <item>De S. Pancratio m.</item>
               <item>Costa de S. Mathia Ap.</item>
               <item><span type="note">De S. Wandregesilo.
-                <note resp="AH">After this point, James' editing of the MS repeatedly groups list items together in a way that the MS does not 
-                reflect or suggest, and he (misleadingly!) omits repeating list-item elements; his editing thus gives a false impression of 
-                irregularity or haphazardness in list style and structure. Therefore from this point I give the direct MS reading rather than
-                material given by James, though I silently maintain James' prior editorial conventions with respect to capitalisation, 
-                abbreviation, and expansion. - AH</note></span></item><!--revise this list based on a newer edition; change note?-->
+                <note resp="AH">After this point, James' editing of the MS repeatedly groups list items together in a way that the MS layout does not reflect or suggest, and he (misleadingly!) omits repeating list-item elements; his editing thus gives a false impression of irregularity or haphazardness in list style and structure. Therefore from this point I give the direct MS reading rather than material given by James, though I silently maintain James' prior editorial conventions with respect to capitalisation, abbreviation, and expansion - AH</note></span></item><!--revise this list based on a newer edition; change note?-->
               <item>De S. Martino.</item>
               <item>De S. Medardo atque Gildardo.</item><!--Note for James' lemma <!ENTITY mdash "&#x2014;">-->
               <item>De S. Odulfo ep.</item>
@@ -107,8 +103,8 @@
               <item>De S. Leonardo.</item>
               <item>De S. Benedicto.</item>
               <item>et alie plures reliquie sine scriptis</item>
-              <item><span type="note">Et de S. Fide V.<note resp="AH">The line break below reflects MS layout. - AH</note></span></item><!--Sic?-->
-              <lb break="no"/> <!--James also makes an editorial comment about this line break but I see no reason to repeat it-->
+              <item><span type="note">Et de S. Fide V.<note resp="AH">The line break below reflects MS layout - AH</note></span></item><!--Sic?-->
+              <lb break="no"/><!--James also makes an editorial comment about this line break but I see no reason to repeat it-->
               <item>Hollord.</item>
               <item>Ketil.</item>
               <item>Ozor.</item>

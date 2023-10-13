@@ -11,7 +11,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Relic list: Tynemouth, Benedictine priory. 12th c. list on fly-leaf of hagiographical volume [Ty]</title><!-- Title of the work you are editing -->
+        <title>Relic list: Tynemouth, Benedictine priory. 12th c. list on fly-leaf of hagiographical volume [Ty1_1]</title><!-- Title of the work you are editing -->
         <editor>Antony Henk</editor>
       </titleStmt>
       <publicationStmt>
@@ -19,11 +19,11 @@
       </publicationStmt>
       <sourceDesc>
         <listWit><!-- Modify and expand as required -->
-          <witness xml:id="Ty">
-            <abbr type="siglum">Ty</abbr>
+          <witness xml:id="Ty1">
+            <abbr type="siglum">Ty1</abbr>
             <name>Corpus Christi College Oxford MS 134<!--locusinfo-->, f. 2r<!--/locusinfo--></name>
             <locus from="2r" to="2r"/>
-            <desc>On a flyleaf of a hagiographical volume.</desc>
+            <desc>12th c. list on a flyleaf of a hagiographical volume</desc>
             <msDesc>
               <msIdentifier>
                 <settlement>Oxford</settlement>
@@ -46,7 +46,8 @@
       <variantEncoding method="parallel-segmentation" location="internal"/>
     </encodingDesc>
     <revisionDesc> 
-      <listChange>
+      <listChange><!--Dates go YYYY-DD-MM-->
+        <change when="2023-13-10" who="AH">Revisions of identifiers to match the listID system</change>
         <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName</change>
         <change when="2023-06-06" who="AH">moved head into list</change>
         <change when="2023-05-06" who="AH">initial draft</change>
@@ -57,7 +58,7 @@
     <body xml:lang="la">
       <div type="list">
         <pb resp="#Ty_T" n="528"/>
-        <pb resp="Ty" n="2r"/>
+        <pb resp="Ty1" n="2r"/>
           <list rend="simple">
               <head><hi>He sunt reliquie ecclesie beati Oswini regis et martyris de Tynemutha</hi></head>
               <item>De nativitate Domini Nostri Iesus Christi </item>

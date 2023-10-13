@@ -11,7 +11,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Relic list: Twynham, Augustinian priory of Christchurch, relics in 13th c. altar dedications, in cartulary [Tw1.B*] </title><!-- Title of the work you are editing -->
+        <title>Relic list: Twynham, Augustinian priory of Christchurch, relics in 13th c. altar dedications, in cartulary [Tw1_1.B] </title><!-- Title of the work you are editing -->
         <editor>Antony Henk</editor>
       </titleStmt>
       <publicationStmt>
@@ -19,11 +19,11 @@
       </publicationStmt>
       <sourceDesc>
         <listWit><!-- Modify and expand as required -->
-          <witness xml:id="Tw">
-            <abbr type="siglum">Tw</abbr>
+          <witness xml:id="Tw1">
+            <abbr type="siglum">Tw1</abbr>
             <name>BL Cotton MS Tiberius D VI, Part II<!--locusinfo-->, ff. 149v-150r<!--/locusinfo--></name>
             <locus from="149v" to="150r"/>
-            <desc>Relics in altar dedications performed in 1221, in cartulary. Material in a different hand and ascribed to a different date than that directly proceeding it; see item Tw1.A*.</desc>
+            <desc>Relics in altar dedications performed in 1221, in cartulary. Material in a different hand and ascribed to a different date than that directly proceeding it; see listID Tw1_1.A</desc>
             <msDesc>
               <msIdentifier>
                 <settlement>London</settlement>
@@ -46,7 +46,8 @@
       <variantEncoding method="parallel-segmentation" location="internal"/>
     </encodingDesc>
     <revisionDesc> 
-      <listChange>
+      <listChange><!--Dates go YYYY-DD-MM-->
+        <change when="2023-13-10" who="AH">Revisions of identifiers to match the listID system</change>
         <change when="2023-07-08" who="AH">Split list off from Tw1, creating Tw1.A and .B, updated descriptions and other materials.</change>
         <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName</change>
         <change when="2023-06-06" who="AH">Initial draft. Encoded head inside of list this time. Some hacky business to make the trailer display
@@ -58,7 +59,7 @@
     <body xml:lang="la">
       <div type="list">
         <pb resp="#Tw_T" n="524"/>
-        <pb resp="#Tw" n="149v"/>
+        <pb resp="#Tw1" n="149v"/>
         <list rend="simple">
           <head><hi><handShift/><span type="note"><note resp="#Tw_T">From this point, in another hand.</note>Anno</span> 
             ab Incarnatione MCCXXI<!--1221-->, dedicatum est altare sancti Michaelis arcangeli a domino Nicholao episcopo Insularum, 
@@ -71,7 +72,7 @@
           <item>De sepulcro Domini</item>  
           <item>De monte Syon</item>  
 
-       <pb resp="#Tw" n="150r"/>
+       <pb resp="#Tw1" n="150r"/>
           <item>De petra <span type="note">....<note resp="#Tw_T">(mutilated)</note></span></item><!--not ideal because gap exists for this-->  
           <item>De ligno quod Dominus plantavit manibus suis</item>  
           <item>De petra super quam Dominus commedit cum discipulis suis</item>  

@@ -23,7 +23,7 @@
             <abbr type="siglum">E3</abbr>
             <name>Exeter Cathedral MS 2861<!--locusinfo-->, f. 1r-1v<!--/locusinfo--></name>
             <locus from="1r" to="1v"/>
-            <desc>The list is on a scroll rather than in a codex; 1r and 1v refer to the respective sides of the scroll.</desc>
+            <desc>The list is on a scroll rather than in a codex; 1r and 1v refer to the respective sides of the scroll</desc>
             <msDesc>
               <msIdentifier>
                 <settlement>Exeter</settlement>

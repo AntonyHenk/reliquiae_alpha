@@ -11,7 +11,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Relic list: Exeter, late 12th c. list on scroll [E3]</title><!-- Title of the work you are editing -->
+        <title>Relic list: Templatesby, late 12th c. list [T1_1]</title><!-- Title of the work you are editing. Use the ListID in brackets. -->
         <editor>Antony Henk</editor>
       </titleStmt>
       <publicationStmt>
@@ -19,23 +19,23 @@
       </publicationStmt>
       <sourceDesc>
         <listWit><!-- Modify and expand as required -->
-          <witness xml:id="T1">
-            <abbr type="siglum">T1</abbr>
+          <witness xml:id="T1"><!--msID goes here (part before the underscore)-->
+            <abbr type="siglum">T1</abbr><!--msID ALSO goes here (part before the underscore)-->
             <name>Templatesby Cathedral Augustine MS 1066<!--locusinfo-->, f. 1r-1v<!--/locusinfo--></name><!--May be removed later-->
             <locus from="1r" to="1v"/>
-            <desc>A list found in a 9th cent. Latin homiliary.</desc><!--Short desc. from Thomas catalogue-->
+            <desc>A list found in a 9th cent. Latin homiliary.</desc><!--Short desc. from tabular catalogue-->
             <msDesc><!--Normal MS desc-->
               <msIdentifier>
                 <settlement>Templatesby</settlement>
                 <repository>Templatesby Cathedral</repository>
                 <collection>Augustine</collection><!--E.g., Cotton, Parker-->
                 <idno>1066</idno><!--Do NOT include 'MS'-->
-                <msName>Templatesby Cathedral Augustine MS 1066</msName><!--Use established name in Thomas for now-->
+                <msName>Templatesby Cathedral Augustine MS 1066</msName><!--Use established name from tabular catalogue-->
               </msIdentifier>
             </msDesc>
           </witness>
-          <witness xml:id="T1_E"><!--Handle the problem of non-Thomian sigla later?-->
-            <abbr type="siglum">T1_E</abbr>
+          <witness xml:id="T1_M"><!--Name this after the msID then use underscore and initial of editor's last name-->
+            <abbr type="siglum">T1_M</abbr>
             <name>Mustermann, M. 'Lists of saint's relics in the Templatesby Homiliary', Middling Ages 4, no. 20(2000): 69-70</name>
             <locus from="69" to="70"/>
           </witness>
@@ -46,7 +46,8 @@
       <variantEncoding method="parallel-segmentation" location="internal"/>
     </encodingDesc>
     <revisionDesc> 
-      <listChange>
+      <listChange><!--Dates go YYYY MM DD-->
+        <change when="2023-10-13" who="AH">Updated template to new standards.</change>
         <change when="2023-09-06" who="AH">Initial transcription draft.</change>
       </listChange>
     </revisionDesc>
@@ -54,7 +55,7 @@
   <text>
     <body xml:lang="la"><!--Add language as 'la' or 'ang' depending. If there are language shifts, implement them as needed in body.-->
       <div type="list">
-        <pb resp="#T1_E" n="60"/><!--Place pb's for both witness and MS as needed-->
+        <pb resp="#T1_M" n="60"/><!--Place pb's for both edition witness and MS witness as needed-->
         <pb resp="#T1" n="1r"/><!--Leave an xml comment here if it's weird, like a scroll-->
           <list rend="simple"><!--rend as 'simple' or 'inline' or other style as needed, for each list-->
               <head><hi>Hec sunt nomina sanctarum reliquiarum que habentur in ecclesia sancte Marie et sancti Petri</hi></head>
@@ -63,7 +64,7 @@
               <item>De presepe Domini</item>
               <item>De lancea et mucrone unde latus Domini apertum est</item>
               <item>De mensa Christi in qua ipsemet cenabat</item>
-        <pb resp="#T1_E" n="70"/>
+        <pb resp="#T1_M" n="70"/>
               <item>De candela quam angelus Domini in sepulcro Christi irradiavit</item>
             </list>
               
@@ -71,12 +72,12 @@
               <head><hi>De Apostolis</hi></head><!--Use head and hi to mark a header that's visually different-->
               <item>De barba sancti Petri apostoli et de capillis et de vestimento eiusdem</item>
               <item>De colla sancti Pauli et de veste eiusdem</item>
-              <item><span type="note">De baculo sancti Andree apostoli<note resp="#T1_E" place="inline">(This item added in a later hand)</note></span></item>
+              <item><span type="note">De baculo sancti Andree apostoli<note resp="#T1_M" place="inline">(This item added in a later hand)</note></span></item>
           </list>
               
           <list rend="inline">
               <head><hi>De Martiribus</hi></head>
-            <item>De reliquiis sancti <span type="note">XL martyris<note resp="#T1_E" n="4" place="bottom">Forty Martyrs.</note></span></item>
+            <item>De reliquiis sancti <span type="note">XL martyris<note resp="#T1_M" n="4" place="bottom">Forty Martyrs.</note></span></item>
               <item>De sanguine sancti Stephani protomartyris et de reliquiis eiusdem et de capite eius</item>
               <item>De ossibus sancti Laurentii martyris</item>
               <item>De carbone et reliquiis eiusdem</item>
