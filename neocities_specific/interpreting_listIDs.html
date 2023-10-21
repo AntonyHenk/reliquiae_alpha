@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loca Sanctorum: Relic Inventories and Relic Lists of Early England</title>
+         
+    <!--This is the current 'correspondence table' page. I should rename and retitle this page and put it somewhere else, on some sort of 'how to read the system' methodology page.-->
+
+    
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <h1>Interpreting ListIDs</h1>
+    <a class="navbutton" href="index.html">Return to Index</a>
+    <p>
+    The 'listID' is a systematic labeling method that attempts to account for the nesting that can happen in relic lists, as well as for the possibility of multiple witnesses. The 'listID' is composed of two parts, seperated by an underscore: the 'msID' and the 'textID'. Relic lists must be edited per witness, as they are not amenable to being plotted on a genealogical stemma in the standard method of Lachmann, formalised by Maas in his <i>Textkritik</i>: it is impossible to be sure if multiple witnesses rely on one another, on a fair or working copy of another list, or if they merely rely on the same collection of physical things. Additionally, the mere existence of multiple lists (even congruent ones) for a single house spread out over several years is of material historical evidence and should not be obscured by editing methodology.<br>    
+    Relic lists' listIDs function in the following way: <br><br>
+    <h2>Example of List/Sub-List: WRC1_2.A</h2>
+    <b>WRC</b>: Windsor Royal Chapel (adapted from I. G. Thomas's catalogue when possible)<br>
+    <b>1</b>: The first number indicates that the item comes from a particular manuscript. Combined together with the letter designation, this first part of the listID is a stable identifier for every manuscript (the msID). Therefore, it matches the XML MS sigla thus: &lt;xml&gt;xml:id="WRC1"&lt;/xml&gt;.<br>
+    <b>_</b>: Separates the msID from the textID.<br> 
+    <b>2</b>: Indicates the boundaries of an 'encompassing' textual item, if more than one are present. In most lists, especially the early lists, this number will match the number used in the msID (E.g., Tw1_1.A and Tw1_1.B). This is because in many manuscripts, relic lists with different rubrications and dates appear physically right next to one another, making it impossible to be sure if they are intended as independent recordings that are merely placed next to each other, or if they are meant to be 'entries' into a united overall documentary space. In these cases, it is always simply assumed that the lists are meant as 'entries' to a single archival space in the manuscript, meaning that the 'largest container' is in fact the manuscript itself. To further determine sublists vs. containers, the usual criteria that are considered are (1) presence of rubrications, (2) clearly apparent passages of time, (3) length of the list/sublist itself, (4) the content of the list/sublist. For example, many Durham lists contain a seeming 'sublist' of relics discovered when opening the shrine of S. Cuthbert (see below), but in some cases, it is clear that other relics have been added to the end of that section of the list long after said event. Thus it is not really possible to meaningfully split this sublist off from the material preceding it. However, the lists associated with Twynham are split into two sublists because the rubrications make their independence clear by declaring the occaision for the list's composition (an altar dedication) and the dating of that event.     
+    However, this is not always the case. For example, this manuscript (WRC) contains a number of sacrist's inventories for various years, and these sacrist's inventories are the containers for the relic lists--the relic lists are clearly not entries into a single containing relic list. Thus, the largest 'container' in this case is the sacrist inventory, and each has been given its own number.<br>
+    <b>A</b>: Indicates the boundaries of a 'sub-list', if more than one are present. For example, this manuscript's sacrist's inventories contain sub-lists that specifically refer to the contents of different altars. Sub-list labelling is only used when the length of the material to be edited makes breaking down the text into smaller pieces desireable.<br>
+    <br><br>
+    
+    <h2>Example of List with Multiple Recensions/Witnesses: D1_1α</h2>
+    <b>D</b>: Durham (taken from I. G. Thomas's catalogue when possible)<br>
+    <b>1</b>: Indicates that the item comes from a particular manuscript. Combined together with the letter designation, this first part of the listID is a stable identifier for every manuscript (the msID). Therefore, it matches the XML MS sigla thus: &lt;xml&gt;xml:id="D1"&lt;/xml&gt;.<br>
+    <b>_</b>: Separates the msID from the textID.<br>
+    <b>1</b>: Indicates a particular relic list text, or the boundaries of the 'encompassing' textual item (if more than one are present). When multiple 'recensions' of a list that are very similar appear, this number will be the same across the group.<br> 
+    <b>α</b>: Greek characters appear when multiple 'recensions' of the same list occur in order to differentiate them while demonstrating their textual closeness; e.g., the same list with only minimal divergences appears in multiple MSS. In this corpus, these 'recensions' are afforded their own independent statuses as texts, so Greek characters are employed to show those would-be relations. If a Greek letter causes problems for coding-related reasons, the letter is spelled out and hyphenated to the end, e.g., 'D1-alpha'.
+    <br><br>  
+
+    <h2>Example of List with Unknown Manuscript: Wimb1*_1</h2>
+    <b>Wimb1*</b>: The asterisk in the msID indicates that this relic list is either (a) only extant today in a printed edition or (b) in a manuscript that cannot be located at this point. Some items may be designated with an asterisk temporarily.
+    <br><br> 
+
+    <h2>Other Special Characters</h2> 
+    At times a plus sign (+) or the letter x (x) may appear in the listID system. This usually indicates that something about the list is troublesome, or that as of yet the project has not progressed enough to decide how to break that list into various texts or assign the relevant manuscripts their msIDs. <br><br>
+
+    <a class="navbutton" href="index.html">Return to Index</a>
+    </p>
+  </body>
+  </html>
