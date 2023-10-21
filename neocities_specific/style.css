@@ -105,31 +105,23 @@ li.navbar a {     /*set button width for navbar*/
     visibility: visible;
   }
 
-  .tooltip_MS_Desc {
+  .tooltip_MS_Desc {                /*Tool tips for the short MS descs...*/
     position: relative;
     display: inline-block;
     }
 
-  .tooltip_MS_Desc span.MS_Desc_tooltip_text {       /*Tool tips for the short MS descs...*/
-    visibility: hidden;
-    display: inline-block;
-    color:white;
-    background-color:MediumBlue;
-    box-shadow: 0 2px 4px grey;
-    height: 26px;
-    font-size: 1em;
-    text-align: left;
-    width:450px; 
-    padding-left: 1em;
-  /* Position the tooltip */
+  span.MS_Desc_tooltip_text {       
+    display: none;
     position: absolute;
-    z-index: 3;
-    top: 2px;
-    left: 102%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1
   }
 
   .tooltip_MS_Desc:hover span.MS_Desc_tooltip_text {
-    visibility: visible;
+    display: block;
   }
 
 
