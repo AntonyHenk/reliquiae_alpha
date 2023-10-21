@@ -105,6 +105,29 @@ li.navbar a {     /*set button width for navbar*/
     visibility: visible;
   }
 
+  .tooltip_MS_Desc span.MS_Desc_tooltip_text {       /*Tool tips for the short MS descs...*/
+    visibility: hidden;
+    display: block;
+    color:white;
+    background-color:MediumBlue;
+    box-shadow: 0 2px 4px grey;
+    height: 26px;
+    font-size: 1em;
+    text-align: left;
+    width:450px; 
+    padding-left: 1em;
+  /* Position the tooltip */
+    position: absolute;
+    z-index: 3;
+    top: 2px;
+    left: 102%;
+  }
+
+  .tooltip_MS_Desc:hover span.MS_Desc_tooltip_text {
+    visibility: visible;
+  }
+
+
 
 #updates {         /*Styling the News section*/
   float: left;
