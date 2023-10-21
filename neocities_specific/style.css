@@ -105,9 +105,14 @@ li.navbar a {     /*set button width for navbar*/
     visibility: visible;
   }
 
+  .tooltip_MS_Desc {
+    position: relative;
+    display: inline-block;
+    }
+
   .tooltip_MS_Desc span.MS_Desc_tooltip_text {       /*Tool tips for the short MS descs...*/
     visibility: hidden;
-    display: block;
+    display: inline-block;
     color:white;
     background-color:MediumBlue;
     box-shadow: 0 2px 4px grey;
