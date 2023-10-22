@@ -32,10 +32,19 @@ body {
   width:100%;
   }
 
-th, td {                                            /*Table Stuff*/
+td {                                            /*Table Stuff*/
   padding:2px;
   text-align: left;
   }
+
+td.ms_notes_button {                                            /*Table Stuff*/
+    padding:2px;
+    text-align: center;
+    }
+
+th {                                          /*Centers table header text*/
+  text-align: center;
+}
 
 tr:nth-child(even) {background-color: lightgrey}
 
@@ -124,7 +133,9 @@ li.navbar a {     /*set button width for navbar*/
     display: block;
   }
 
-
+a.ms_notes_button {         /*Centers the little buttons for MS notes links */
+  margin: auto;
+}
 
 #updates {         /*Styling the News section*/
   float: left;
