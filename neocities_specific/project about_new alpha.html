@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loca Sanctorum: Relic Inventories and Relic Lists of Early England</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <img id="heroimage" src="/images/bayeux_hero.jpg">
+    <a class="navbutton" href="index.html">Return to Index</a>
+    <h1>The Future of Loca Sanctorum</h1>
+    <p>Loca Sanctorum is only a beta website for the final end product: a digital text-object-manuscript edition of the corpus of the relic lists localisable to England dating to between ca. 1075 and 1286. This edition seeks to begin answering to an expressed desideratum<!-- (Luxford 2017, Bethell 1972)--> for an edited collection of all the medieval English relic lists and related texts.
+  </p>
+  
+  <div><!--Fix urls and upload pic--><img id="myface" src="/myface.jpg" alt="Mockup of a digital text-object-manuscript digital edition" width="1175" height="720"></div>
+  
+  <p>The edition will be transcribed using XML and following the <a href="https://tei-c.org/" target="_blank">TEI Consortium</a> guidelines for digital XML editing. See below for a detailed breakdown of the diagrammed mockup.</p>
+
+  <h2>I. Typology and Name Marking</h2>
+  <p>There are <b>four</b> types of data most central to reading and using relic lists:
+    <ol><li>the typology of the saint (e.g., Christ himself, apostle, martyr, virgin)</li>
+        <li>the typology of the relic mentioned (e.g., a piece of clothing, a piece of bodily remains)</li>
+        <li>the canonical identity of the relic (e.g., Mother Mary, St Benedict of Nursia, the Venerable Bede)</li>
+        <li>the office of the saint (e.g., pope, king)</li>
+    </ol>
+  </p>
+  <p>
+        Conveniently, TEI's architecture provides for markup options of each of these traits using attribute classes and attributes.<br>
+  The class <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.naming.html" target="_blank">att.naming</a> allows for reference codes to specific entities from a controlled reference vocabulary as well as more general characteristics assigned using the <code>@role</code> attribute, which can even be given multiple values. This is a very flexible markup method, so defining office traits for the listed relic’s personage (e.g., confessor, king, apostle, martyr, etc.) can be marked up either with, or without, a more specific <code>@ref</code> attribute intended to point back to the controlled list of canonical persons. Furthermore, the @ana attribute can be applied flexibly in any element, so it can be used in combination with the ‘word’ tag, <code>&lt;w&gt;</code>, all contained by <code>&lt;item&gt;</code>, in order to mark the typology of a relic, or distinguish a specific office. An idealized scenario appears as follows:
+      Manuscript : ‘Denſ ſcī stephani ᵱtomartiriſ’
+      <pre>
+        <code>
+        &lt;item&gt;&lt;w ana="lesser_body">denſ&lt;/w&gt;
+           &lt;name role="martyr" ref="#Stephen01"&gt; 
+              &lt;w&gt;ſcī&lt;/w&gt; &lt;w&gt;stephani&lt;/w&gt; &lt;w&gt;ᵱtomartiriſ&lt;/w&gt;
+           &lt;/name&gt;
+        &lt;/item&gt;
+      </code>
+    </pre>
+      It would not be reasonable to mark up every single list item to this extent, as this would require adherence to a vast controlled vocabulary and constant reference to the bevy of indices of saints (indeed, the lists’ saints have still not been completely indexed). Thus, the entities to be marked up have been limited to a specific pool. Entities that have been selected for typology markup are shown below.
+      <table>
+        <tr>
+          <th>Saint-Typology Attributes</th>
+          <th>Saint Office Attributes</th>
+          <th>Relic Typology Attributes</th>
+        </tr>
+        <tr>
+          <td>Christ</td>
+          <td>Archbishop/Pope</td>
+          <td>Whole Body</td>
+        </tr>
+        <tr>
+          <td>Mother Mary</td>
+          <td>Bishop</td>
+          <td>Greater Body (e.g., arm)</td>
+        </tr>
+        <tr>
+          <td>Apostle</td>
+          <td>Abbot/Abbess</td>
+          <td>Lesser Body (e.g., tooth)</td>
+        </tr>
+        <tr>
+          <td>Old Testament Other</td>
+          <td>Other Eccelsiastic</td>
+          <td>Bodily Fluid (e.g., tears)</td>
+        </tr>
+        <tr>
+          <td>New Testament Other</td>
+          <td>Uncertain Eccelsiastic</td>
+          <td>Oil</td>
+        </tr>        
+        <tr>
+          <td>Martyr</td>
+          <td>King/Queen</td>
+          <td>Ash</td>
+        </tr>        
+        <tr>
+          <td>Confessor</td>
+          <td>Noble</td>
+          <td>Nonbodily (e.g., clothing)</td>
+        </tr>        
+        <tr>
+          <td>Virgin</td>
+          <td>Other Secular</td>
+          <td>Uncertain</td>
+        </tr>        
+        <tr>
+          <td>Uncertain</td>
+          <td>Uncertain Secular</td>
+          <td>Unstated
+          </td>
+        </tr>
+        <tr>
+          <td>Unstated</td>
+          <td>Unstated</td>
+          <td> </td>
+        </tr>
+      </table>
+      Using <code>@ref</code>, a  subset of figures appearing in the relic lists will also be marked up with a <b>unique identifier</b> for canonical identities. The controlled vocabulary pool for these identities consists of <b>200</b> identifiers for both local Insular saints and more broadly venerated figures based on sources demonstrating the most important saints in the Early English Church: the reconstructed Ælfrician <i>Sanctorale</i><!--(Lapidge 1996)-->, the <i>Secgan be</i>, an Old English resting-place list of the bodies of local saints<!-- (Liebermann 1889, Rollason 1978)-->, and the Old English Martyrology <!--(Rauer 2013)-->. This additional markup, when expanded with URLs added via <code>@corresp</code>, will enable direct interlinking between the edition’s text, the <a href="https://theindex.princeton.edu" target="_blank">Index of Medieval Art</a>, and the entries on the <a href="https://pase.ac.uk/" target="_blank">Prosopography of Anglo-Saxon England</a> database. Assignment of <code>@ref</code> values will refer to prior indexing <!--(e.g., Conner 1993) -->when available, or else default to the text itself. For example, all list items placed under the heading ‘Martyrs’ will be tagged <role="martyr">, even if the saint cannot be readily identified as a martyr.</p>
+
+  <h2>II. Manuscript Viewer</h2>
+  <p>The manuscript viewer will include core functionalities such as zoom, pan, and book and single-leaf views. The viewer will default to displaying the incipit of the relic list but allow viewing of the full manuscript when possible. Links to manuscript context files with further editorial details of each relic list will appear above the manuscript viewport itself. Key manuscript metadata (repository, shelfmark, brief description, dating) will also appear in this space for convenient user reference</p>
+
+  <h2>III. Interlink Panel</h2>
+  <p>Using the encoded <code>@ref</code> tags that correspond to specific canonical identities in the lists, the interlink panel will allow users to instantly view relevant information about that canonical identity. When the user chooses to interlink with the <a href="https://pase.ac.uk/" target="_blank">Prosopography of Anglo-Saxon England</a> and clicks a highlighted person’s name, the person’s ‘Factoid List’ (e.g.,<a href="https://pase.ac.uk/jsp/DisplayPerson.jsp?personKey=886&startOpen=yes" target="_blank">‘Oswald 1’</a>) will display. When the user activates interlinking with the Index of Medieval Art, an associated object d’art and its information card will display on click (e.g., <a href="https://theindex.princeton.edu/s/view/ViewWorkOfArt.action?id=1FE98A36-7DCA-4C8A-8E45-5C010FFC409D" target="_blank">Work of Art: System Number 103931</a>). Users will then be able to view further artwork at random for that person directly in the interlink panel.</p>
+  <h2>IV. Relic List Edition</h2>
+  <p>Texts will be transcribed using parallel segmentation, allowing input from prior editors, but a version-by-version approach will be adopted. </p>
+
+  <!--Here include links to the personal about me section and don't forget to rename 'about' to 'about_me' so that i have 'about_project' and 'about_me'-->
+
+  <a class="navbutton" href="index.html">Return to Index</a>  
+  </body>
+</html>
