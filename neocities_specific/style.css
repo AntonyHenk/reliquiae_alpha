@@ -49,9 +49,9 @@ th {                                          /*Centers table header text*/
 tr:nth-child(even) {background-color: lightgrey}  /*Table Stuff*/
 
 
-div.typology_table {                        /*Typology table Stuff*/
-  display: block;
-  margin: auto;
+table.typology_table {                        /*Typology table Stuff*/
+margin-left: auto;
+margin-right: auto;
   }
 
 a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
