@@ -37,7 +37,7 @@ td {                                            /*Table Stuff*/
   text-align: left;
   }
 
-td.ms_notes_button {                                            /*Table Stuff*/
+td.ms_notes_button {                               /*Table Stuff*/
     padding:2px;
     text-align: center;
     }
@@ -46,7 +46,12 @@ th {                                          /*Centers table header text*/
   text-align: center;
 }
 
-tr:nth-child(even) {background-color: lightgrey}
+tr:nth-child(even) {background-color: lightgrey}  /*Table Stuff*/
+
+#typology_table.td {                            /*Typology table Stuff*/
+  padding:2px;
+  text-align: center;
+  }
 
 a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
     color: yellow;
