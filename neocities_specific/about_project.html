@@ -18,27 +18,24 @@
   <p>The edition will be transcribed using Extensible Markup Language (XML), following the <a href="https://tei-c.org/" target="_blank">TEI Consortium</a> guidelines for digital XML editing. See below for a detailed breakdown of this diagrammed mockup.</p>
 
   <h2>I. Typology and Name Marking</h2>
-  <p>There are <b>four</b> types of data most central to reading and using relic lists:
+  <p>There are <b>four</b> types of data most central to reading and using relic lists:</p>
     <ol><li>the typology of the saint (e.g., Christ himself, apostle, martyr, virgin)</li>
         <li>the typology of the relic mentioned (e.g., a piece of clothing, a piece of bodily remains)</li>
         <li>the canonical identity of the relic (e.g., Mother Mary, St Benedict of Nursia, the Venerable Bede)</li>
         <li>the office of the saint (e.g., pope, king)</li>
     </ol>
-  </p>
   <p>
         Conveniently, TEI's architecture provides for markup options of each of these traits using attribute classes and attributes.<br>
   The class <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.naming.html" target="_blank">att.naming</a> allows for reference codes to specific entities from a controlled reference vocabulary as well as more general characteristics assigned using the <code>@role</code> attribute, which can even be given multiple values. This is a very flexible markup method, so defining office traits for the listed relic’s personage (e.g., confessor, king, apostle, martyr, etc.) can be marked up either with, or without, a more specific <code>@ref</code> attribute intended to point back to the controlled list of canonical persons. Furthermore, the <code>@ana</code> attribute can be applied flexibly in any element, so it can be used in combination with the ‘word’ tag, <code>&lt;w&gt;</code>, all contained by <code>&lt;item&gt;</code>, in order to mark the typology of a relic, or distinguish a specific office. An idealized scenario appears as follows:
   <!--Put a picture here and all that-->
       Manuscript : ‘Denſ ſcī stephani ᵱtomartiriſ’
-      <pre>
-        <code>
+      <pre><code>
         &lt;item&gt;&lt;w ana="lesser_body">denſ&lt;/w&gt;
            &lt;name role="martyr" ref="#Stephen01"&gt; 
               &lt;w&gt;ſcī&lt;/w&gt; &lt;w&gt;stephani&lt;/w&gt; &lt;w&gt;ᵱtomartiriſ&lt;/w&gt;
            &lt;/name&gt;
         &lt;/item&gt;
-      </code>
-    </pre>
+      </code></pre>
       It would not be reasonable to mark up every single list item to this extent, as this would require adherence to a vast controlled vocabulary and constant reference to the bevy of indices of saints (indeed, the lists’ saints have still not been completely indexed). Thus, the entities to be marked up have been limited to a specific pool. Entities that have been selected for typology markup are shown below.
       <table>
         <tr>
@@ -98,7 +95,7 @@
           <td> </td>
         </tr>
       </table>
-      Using <code>@ref</code>, a  subset of figures appearing in the relic lists will also be marked up with a <b>unique identifier</b> for canonical identities. The controlled vocabulary pool for these identities consists of <b>200</b> identifiers for both local Insular saints and more broadly venerated figures based on sources demonstrating the most important saints in the Early English Church: the reconstructed Ælfrician <i>Sanctorale</i><!--(Lapidge 1996)-->, the <i>Secgan be</i>, an Old English resting-place list of the bodies of local saints<!-- (Liebermann 1889, Rollason 1978)-->, and the Old English Martyrology <!--(Rauer 2013)-->. This additional markup, when expanded with URLs added via <code>@corresp</code>, will enable direct interlinking between the edition’s text, the <a href="https://theindex.princeton.edu" target="_blank">Index of Medieval Art</a>, and the entries on the <a href="https://pase.ac.uk/" target="_blank">Prosopography of Anglo-Saxon England</a> database. Assignment of <code>@ref</code> values will refer to prior indexing <!--(e.g., Conner 1993) -->when available, or else default to the text itself. For example, all list items placed under the heading ‘Martyrs’ will be tagged <code>&lt;role="martyr"&gt;</code>, even if the saint cannot be readily identified as a martyr.</p>
+      <p>Using <code>@ref</code>, a  subset of figures appearing in the relic lists will also be marked up with a <b>unique identifier</b> for canonical identities. The controlled vocabulary pool for these identities consists of <b>200</b> identifiers for both local Insular saints and more broadly venerated figures based on sources demonstrating the most important saints in the Early English Church: the reconstructed Ælfrician <i>Sanctorale</i><!--(Lapidge 1996)-->, the <i>Secgan be</i>, an Old English resting-place list of the bodies of local saints<!-- (Liebermann 1889, Rollason 1978)-->, and the Old English Martyrology <!--(Rauer 2013)-->. This additional markup, when expanded with URLs added via <code>@corresp</code>, will enable direct interlinking between the edition’s text, the <a href="https://theindex.princeton.edu" target="_blank">Index of Medieval Art</a>, and the entries on the <a href="https://pase.ac.uk/" target="_blank">Prosopography of Anglo-Saxon England</a> database. Assignment of <code>@ref</code> values will refer to prior indexing <!--(e.g., Conner 1993) -->when available, or else default to the text itself. For example, all list items placed under the heading ‘Martyrs’ will be tagged <code>&lt;role="martyr"&gt;</code>, even if the saint cannot be readily identified as a martyr.</p>
 
   <h2>II. Manuscript Viewer</h2>
   <p>The manuscript viewer will include core functionalities such as zoom, pan, and book and single-leaf views. The viewer will default to displaying the incipit of the relic list but allow viewing of the full manuscript when possible. Links to manuscript context files with further editorial details of each relic list will appear above the manuscript viewport itself. Key manuscript metadata (repository, shelfmark, brief description, dating) will also appear in this space for convenient user reference</p>
@@ -109,7 +106,7 @@
   <h2>IV. Relic List Edition</h2>
   <p>Using characters developed by <a href="https://mufi.info/q.php?p=mufi" target="_blank">MUFI</a>, the project aims to display both a highly diplomatic transcription, as well as normalised alternative, for each relic list. Prolegomena and other preliminaries, or other similar 'containing texts', will also be edited alongside the list itself when said texts are not of great length and are particularly crucial. Because of the particular philological nature of lists, each list will be transcribed in a version-by-version approach. However, the transcription will use <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TC.html#TCAPPS" target="_blank">parallel segmentation</a>, using it rather to include input from prior editors rather than related witnesses. The philological filiation between certain lists will be indicated through the specialised <a href="https://locasanctorum.neocities.org/interpreting_listIDs" target="_blank">listID system</a> developed here on Loca Sanctorum.</p>
 
-  <p>If you're looking for information about the editor of this project, try <a href="about_editor.html">this page</a>.
+  <p>If you're looking for information about the editor of this project, try <a href="about_editor.html">this page</a>.</p>
 
   <a class="navbutton" href="index.html">Return to Index</a>  
   </body>
