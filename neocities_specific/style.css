@@ -49,13 +49,12 @@ th {                                          /*Centers table header text*/
 tr:nth-child(even) {background-color: lightgrey}  /*Table Stuff*/
 
 
-#typology_table {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+table.typology_table {                        /*Typology table Stuff*/
+  display: inline-block;
+  margin: auto;
   }
 
-#typology_table.td {                            /*Typology table Stuff*/
+td.typology_table{                            /*Typology table Stuff*/
   padding:2px;
   text-align: center;
   }
