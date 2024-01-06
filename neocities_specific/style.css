@@ -52,6 +52,7 @@ tr:nth-child(even) {background-color: lightgrey}  /*Table Stuff*/
 table.typology_table {                        /*Typology table Stuff*/
 margin-left: auto;
 margin-right: auto;
+border: inset yellow 3px;
   }
 
 a.navbutton:link, a.navbutton:visited {             /*Button Stuff*/
