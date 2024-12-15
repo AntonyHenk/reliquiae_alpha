@@ -156,3 +156,8 @@ lb {
         display:block;
         height: 1em;
       }
+
+choice[expan] {display:none}
+choice:hover expan {display:inline}
+
+del {text-decoration-line:line-through}

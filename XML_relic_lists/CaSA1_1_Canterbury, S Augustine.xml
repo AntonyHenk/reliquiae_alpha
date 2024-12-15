@@ -48,6 +48,7 @@
     </encodingDesc>
     <revisionDesc> 
       <listChange>
+        <change when="2024-12-15" who="AH">Converting this transcription into a full test transcription. Nomina sacra not yet done.</change>
         <change when="2023-10-13" who="AH">Updating of listID and other header elements</change>
         <change when="2023-09-06" who="AH">Placed msDesc into witness, added foliation to msName, fixed header and linebreak issue</change>
         <change when="2023-05-06" who="AH">Initial draft. Ideally needs basis on a newer printing. Hacky line break left in for now.</change>
@@ -60,14 +61,20 @@
         <pb resp="#CaSA1_J" n="55"/>
         <pb resp="#CaSA1" n="iv"/><!--verso of flyleaf-->
           <list rend="inline">
-            <head><hi>Héé sunt reliquie in uno paruo nigro scrinio flore uno signato.</hi></head>
-              <item>De ligno domini plures particule.</item>
-              <item>De sepulchro domini.</item>
-              <item>De Scapula S. Nicomedis mart.</item>
-              <item>De Capillis S. Cecilie uirg. et m.</item>
+            <head><hi>H&#281;
+                        <choice>
+                          <sic>e</sic>
+                          <corr>c</corr>
+                        </choice>
+                        sunt reliquie in uno paruo
+                        <del>&#8266;</del>nigro scrinio flore uno signato.</hi></head>
+              <item>De ligno d&#773;n&#773;i&#773; plures particul&#281;.</item>
+              <item>De Sepulchro d&#773;n&#773;i&#773;.</item>
+              <item>De Scapula S&#773;c&#773;i&#773; Nicomedis mart&#773;.</item>
+              <item>De Capill&#773; S&#773;c&#773;&#281;&#773; Cecili&#281; uirg&#773; &#8266; m&#773;</item>
               <item>De S. Margareta.</item>
-              <item>De S. Ianuario.</item>
-              <item>De uest. S. Marie.</item>
+              <item>De S&#773; Ianuario.</item>
+              <item>De uest&#773; S. Marie.</item>
               <item>De ossibus et uest. S. Clementis m.</item>
               <item>De uest. S. Cecilie.</item>
               <item>De S. Antonio ep.</item>
